@@ -1,0 +1,551 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Allerta', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/* ! FUENTES UTILIZADAS Y COLORES */
+:root {
+    --font-family1: 'Oswald', sans-serif;
+    --font-family7: 'Quicksand', sans-serif;
+    --font-family9: 'Reenie Beanie', cursive;
+    --font-family6: 'Pacifico', sans-serif;
+    --color1: #3022aa;
+    --color2: #7678ED;
+    --color3: #F7B801;
+    --color4: #F18701;
+    --color5: #F35B04;
+
+}
+html{
+    padding: 0;
+}
+/* !HEADER */
+
+header nav{
+    background-color: rgba(255, 252, 252, 0.708);
+}
+header nav .container-fluid a img{
+    height: 5rem;
+    width: 5rem;
+    scale: 3;
+    margin-left: 3rem;
+}
+header nav .container-fluid .navbar-collapse ul li a{
+    font-family: var(--font-family1);
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: black;
+    transition: none;
+}
+header nav .container-fluid .navbar-collapse ul li a i{
+    vertical-align:auto;
+    font-size: 2rem;
+    margin: 0 0.5rem;
+
+
+}
+header nav .container-fluid .navbar-collapse ul li a:hover{
+    color: var(--color1);
+}
+header nav .container-fluid .navbar-collapse ul li::before{
+    content: "";
+    width: 0.6rem;
+    height: 0rem;
+    background-color: var(--color3);
+    border-radius: 20px;
+    transition: 400ms;
+    position: absolute;
+}
+
+header nav .container-fluid .navbar-collapse ul li:hover::before{
+    height: 3.5rem;
+    transform: rotate(180deg);
+}
+.dropdown-menu li::before{
+    display: none;
+}
+
+
+/* !INDEX */
+
+/* !hero */
+main .container-fluid{
+    padding: 0;
+}
+main .hero{
+    padding-top: 7rem;
+}
+main .hero .container-fluid{
+    background-image: url(../assets/images/roomie1.jpg);
+    background: url(../assets/images/roomie2.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+    overflow: hidden;
+
+}
+main .hero .container-fluid .name h1{
+    font-family: var(--font-family6);
+    font-size: 7vw;
+    color: var(--color3);
+    text-shadow: 3px 3px 4px black;
+    cursor: pointer;
+
+}
+
+main .hero .container-fluid .ask h2{
+    font-family: var(--font-family7);
+    color: whitesmoke;
+    font-size: 2.5vw;
+    text-shadow: 1px 1px 5px black;
+    padding-bottom: 2rem;
+}
+main .hero .container-fluid .formulario div{
+    padding: 0;
+}
+main .hero .container-fluid .formulario div input , main .hero .container-fluid .formulario div button {
+    border-radius: 0px;
+    padding: 0.7rem;
+}
+
+.a-info{
+    height: 6rem;
+    width: 6rem;
+    position: absolute;
+    right: 3rem;
+    bottom: 5rem;
+    background-color: rgba(189, 189, 222, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    animation: tembleque 2s ease infinite;
+}
+
+
+/* !Informacion */
+.info{
+    padding-top: 5rem;
+}
+
+.info .informacion .principal .texto article p{
+    font-family: var(--font-family7);
+    font-size: 1rem;
+}
+
+.a-go{
+    height: 6rem;
+    width: 6rem;
+    position: relative;
+    top: -9rem;
+    background-color: rgba(189, 189, 222, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    animation: tembleque 2s ease infinite;
+}
+
+
+/* !Go */
+
+.go{
+    padding-top: 5rem;
+}
+.go .container div p{
+    font-family: var(--font-family7);
+    font-size: 2.5vw;
+}
+
+.a-hero{
+    height: 6rem;
+    width: 6rem;
+    position: absolute;
+    right: 2rem;
+    background-color: rgba(189, 189, 222, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    animation: tembleque 2s ease infinite;
+
+}
+.a-hero i{
+    transform: rotate(180deg);
+}
+
+
+
+/* !NOSOTROS */
+
+
+.nosotros{
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+
+
+.nosotros .container .nosotros__fila1 .tittle__equipo{
+    font-family: var(--font-family7);
+    font-size: 3rem;
+    padding: 1rem 0;
+    overflow: hidden;
+    
+}
+
+
+.nosotros .container .nosotros__fila2 img{
+    width: 100%;
+    height: 90vh;
+    object-fit:contain;
+    filter:grayscale(1);
+    padding: 0;
+    transition: 0.3s all ease;
+
+}
+
+.nosotros .container .nosotros__fila2 img:hover{
+    filter: grayscale(0);
+}
+
+.nosotros .container .nosotros__fila3 p{
+    font-size: 1.3rem;
+    padding: 1rem 0;
+
+
+}
+
+
+.cards-individuales .container{
+    padding: 2rem 0;
+    
+
+}
+
+
+.cards-individuales .container .cards-individuales__fila1 .card{
+    border: 3px solid orange;
+
+}
+
+.cards-individuales .container .cards-individuales__fila1 .card:hover{
+    box-shadow: 2px 2px 5px 2px black;
+    cursor: pointer;
+    scale: 1.1;
+}
+.cards-individuales .container .cards-individuales__fila1 .card .card-body .nombre{
+    font-family: var(--font-family9);
+    font-size: 3rem;
+}
+
+.cards-individuales .container .cards-individuales__fila1 .card .card-body .presentacion{
+    font-family: var(--font-family7);
+    text-align: justify;
+}
+
+.cards-individuales .container .cards-individuales__fila1 .card .card-body i{
+    font-size: 3rem;
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+}
+.cards-individuales .container .cards-individuales__fila1 .card:nth-child(1) .card-body i{
+    color: rebeccapurple;
+    animation: zoom 1s ease infinite;
+}
+
+
+
+    
+
+/* !PIZARRA */
+
+.pizarra{
+    padding-top: 7rem;
+}
+.pizarra__content {
+    background-image: url(../assets/images/texturacorcho8.jpg);
+    background-size: cover;
+    box-shadow: inset 0px 0px 20px 1px black;
+    margin: 1rem auto 15rem auto;
+    width: 95vw;
+    height: 800px;
+    border-style: inset;
+    border-width: 3rem;
+    border-image-source: url(../assets/images/bordertextura3.jpg);
+    border-image-slice: 60 30;
+    position: relative;
+    font-size: 1rem;
+    padding-top: 20rem;
+
+}
+
+.pizarra__content .calendario {
+    border: 20px black;
+    position: absolute;
+    height: 350px;
+    width: 500px;
+    top: 2rem;
+    left: 10rem;
+    Box-shadow: 0 10px 2px 0px rgb(75, 61, 61);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.pizarra__content .post__it {
+    display: block;
+    position: absolute;
+    top: 35rem;
+    border: 2px solid;
+    right: 35rem;
+    height: 15rem;
+    width: 15rem;
+    box-shadow: 0 10px 2px 0px rgb(75, 61, 61);
+    transition: 0.5s all ease;
+
+}
+
+.pizarra__content .post__it:hover {
+    transform: scale(1.1);
+}
+
+.pizarra__content .post__it::placeholder {
+    font-family: var(--font-family6);
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+.pizarra__content .post1 {
+    top: 8rem;
+    right: 20rem;
+    transform: rotate(10deg);
+    background-color: #cfc;
+}
+
+.pizarra__content .post2 {
+    top: 5rem;
+    right: 2rem;
+    transform: rotate(-5deg);
+    background-color: #ccf;
+}
+
+.pizarra__content .post3 {
+    top: 25rem;
+    right: 15rem;
+    background-color: #ffc;
+}
+
+
+
+.pizarra__content .links {
+    position: absolute;
+    bottom: 1rem;
+    left: 15rem;
+    background: url(../assets/images/papel.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+    width: 20rem;
+}
+
+.pizarra__content ul {
+    list-style-type: none;
+    font-size: 3rem;
+}
+
+.pizarra__content ul li a i {
+    vertical-align: middle;
+    margin: 0 1rem;
+    font-size: 2rem;
+    color: var(--color1);
+}
+
+.pizarra__content .links a {
+    font-family: var(--font-family9);
+    font-size: 2rem;
+    text-decoration: none;
+    margin: 0 0.7rem;
+    color: black;
+
+}
+
+.pizarra__content .links a:hover {
+    color: var(--color3);
+}
+
+
+/* !CONTACTO */
+.formularios{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 7rem;
+}
+.container-contacto{
+    padding: 3rem;
+    margin-top: 4rem;
+    background-color: aliceblue;
+    max-width: 45%;
+    border-radius: 20px;
+    padding-top: 7rem;
+}
+
+
+form .botones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    width: 50%;
+    margin: 2rem auto;
+}
+
+
+
+
+
+/* !FOOTER */
+footer .container-fluid{
+    background-color: var(--color4);
+    margin-top: 4rem;
+    overflow: hidden;
+}
+footer .icons-links{
+    padding: 1rem 0;
+}
+footer .icons-links ul li{
+    font-size: 2.7rem;
+    margin:0 1rem;
+}
+
+footer .icons-links ul li a i{
+    color: white;
+    text-shadow: 5px 5px 2px rgb(146, 143, 143);
+}
+footer .icons-links ul li a i:hover{
+    scale: 1.3;
+}
+
+
+
+
+
+
+/* !MEDIAS PERSONALIZADOS */
+@media (max-width: 1200px) {
+    .cards-individuales .container .cards-individuales__fila1{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        
+    }
+    .cards-individuales .container .cards-individuales__fila1 .col{
+        margin: 2rem 0;
+        width: 80%;
+    }
+    .nosotros .container .nosotros__fila2 img{
+        height: 40vh;
+    
+    }
+
+    
+}
+@media (max-width: 992px){
+    header nav .container-fluid .navbar-collapse ul li::before{
+        display: none;
+    }
+    
+
+}
+
+
+@media (max-width:767px ) {
+    .principal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .principal .article .texto div p{
+        width: 100%;
+    }
+    .go .container div p{
+        font-family: var(--font-family7);
+        font-size: 5vw !important;
+    }
+    .a-info , .a-go , .a-hero{
+        display: none;
+    }
+    .info .informacion .principal div .animacion{
+        height: 3000%;
+    }
+    .info .informacion .principal .texto article{
+        width: 100vw;
+    }
+    main .hero .container-fluid .name h1{
+        font-size: 14vw;
+    }
+    main .hero .container-fluid .ask h2{
+        font-size: 6vw;
+    }
+    
+    
+}
+@media (max-width: 757px) {
+    .formularios{
+      flex-direction: column;
+    }
+    .container-contacto{
+        max-width: 90%;
+    }
+  }
+
+
+
+
+
+/* !ANIMACIONES */
+
+
+@keyframes tembleque {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-15deg);
+    }
+    50%{
+        transform: rotate(15deg);
+    }
+    75%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    
+}
+
+@keyframes zoom {
+    0%{transform: scale(1);}
+    20%{transform: scale(1.3);}
+    40%{transform: scale(1);}
+    60%{transform: scale(1.3);}
+    80%{transform: scale(1);}
+    100%{transform: scale(1);}
+}

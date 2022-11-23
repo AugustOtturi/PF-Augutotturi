@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO</title>
+    <link rel="shortcut icon" href="../assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Gloria+Hallelujah&family=Indie+Flower&family=Oswald:wght@500&family=Pacifico&family=Quicksand:wght@600&family=Reenie+Beanie&family=Roboto&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6da7673045.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../assets/images/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav justify-content-start">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html"><i
+                                    class="fa-solid fa-house"></i>INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html"><i class="fa-solid fa-user"></i>NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./actividades.html"><i
+                                    class="fa-solid fa-bolt"></i>ACTIVIDADES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pizarra.html"><i class="fa-solid fa-thumbtack"></i>PIZARRA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html"><i class="fa-solid fa-phone"></i>CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="main">
+        <section class="formularios">
+            <div class="container-fluid container-contacto">
+                <h2 class="text-center">Envianos tu pregunta</h2>
+                <form action="">
+                    <!-- !NOMBRE -->
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" class="form-control"
+                            placeholder="Juan, Agustina, Roberta, etc">
+                    </div>
+                    <!-- !Edad -->
+                    <div class="mb-3">
+                        <label for="edad" class="form-label">Edad</label>
+                        <input type="number" name="edad" id="edad" class="form-control" placeholder="25">
+                    </div>
+                    <!-- !Mail -->
+                    <div class="mb-3">
+                        <label for="mail" class="form-label">Mail</label>
+                        <input type="email" name="mail" id="mail" class="form-control"
+                            placeholder="Juan.arturo@gmail.com">
+                    </div>
+                    <!-- !Pregunta1 -->
+                    <div class="mb-3">
+                        <label for="pregunta1" class="form-label">¿Como nos conociste?</label>
+                        <select name="pregunta1" id="pregunta1" class="form-select">
+                            <option value="1">Instagram</option>
+                            <option value="1">Facebook</option>
+                            <option value="1">Newsletter</option>
+                            <option value="1">Twitter</option>
+                            <option value="1">Roomie</option>
+                            <option value="1">Otro</option>
+                        </select>
+                    </div>
+                    <!-- !Pregunta2 -->
+                    <div class="mb-3">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                                checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">¿Sos roomie?</label>
+                        </div>
+                    </div>
+                    <!-- !TextArea -->
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Comentario" id="floatingTextarea"
+                            style="height: 7rem;"></textarea>
+                        <label for="floatingTextarea">Envianos tu pregunta</label>
+                    </div>
+                    <!-- !Botones -->
+                    <div class="mb-3 botones">
+                        <button class="btn btn-primary" type="submit">Enviar formulario</button>
+                        <button class="btn btn-secondary" type="reset">Reset</button>
+                    </div>
+                </form>
+
+
+                <!-- !FORMULARIO2 -->
+            </div>
+            <div class="container-fluid container-contacto">
+                <h2 class="text-center">¿Buscas alojamiento?</h2>
+                <form action="">
+                    <!-- !NOMBRE -->
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" class="form-control"
+                            placeholder="Juan, Agustina, Roberta, etc">
+                    </div>
+                    <!-- !Edad -->
+                    <div class="mb-3">
+                        <label for="edad" class="form-label">Edad</label>
+                        <input type="number" name="edad" id="edad" class="form-control" placeholder="25">
+                    </div>
+                    <!-- !Mail -->
+                    <div class="mb-3">
+                        <label for="mail" class="form-label">Mail</label>
+                        <input type="email" name="mail" id="mail" class="form-control"
+                            placeholder="Juan.arturo@gmail.com">
+                    </div>
+                    <!-- !Pregunta1 -->
+                    <div class="mb-3">
+                        <label for="pregunta1" class="form-label">Ciudad donde busca</label>
+                        <select name="pregunta1" id="pregunta1" class="form-select">
+                            <option value="1">Ciudad de México</option>
+                            <option value="1">Estado de México</option>
+                            <option value="1">Oaxaca</option>
+                            <option value="1">Morelia</option>
+                            <option value="1">Veracruz</option>
+                            <option value="1">Otro</option>
+                        </select>
+                    </div>
+                    <!-- !Pregunta2 -->
+                    <div class="mb-3 sexo">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1" checked>
+                            <label class="form-check-label" for="inlineRadio1">Mujer</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Hombre</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="inlineRadio3">No especifica</label>
+                        </div>
+                    </div>
+                    <!-- !TextArea -->
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Comentario" id="floatingTextarea"
+                            style="height: 7rem;"></textarea>
+                        <label for="floatingTextarea">Contanos un poco de vos</label>
+                    </div>
+                    <!-- !Botones -->
+                    <div class="mb-3 botones">
+                        <button class="btn btn-primary" type="submit">Enviar formulario</button>
+                        <button class="btn btn-secondary" type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+    </div>
+    </section>
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row icons-links">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com/" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://twitter.com/?lang=es" target="_blank"><i
+                                class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.infobae.com/?noredirect" target="_blank"><i
+                                class="fa-solid fa-newspaper"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row bg-dark derechos">
+                <p class="text-center text-white">© Derechos Reservados AUGUSTO HORACIO OTTURI - 2022</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js
+    "></script>
+</body>
+
+</html>
