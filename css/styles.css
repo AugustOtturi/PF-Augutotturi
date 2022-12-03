@@ -199,9 +199,8 @@ main .hero .container-fluid .formulario div input , main .hero .container-fluid 
 
 .nosotros .container .nosotros__fila1 .tittle__equipo{
     font-family: var(--font-family7);
-    font-size: 3rem;
-    padding: 1rem 0;
-    overflow: hidden;
+    font-size: 3.2rem;
+    padding: 2rem 0;
     
 }
 
@@ -223,6 +222,7 @@ main .hero .container-fluid .formulario div input , main .hero .container-fluid 
 .nosotros .container .nosotros__fila3 p{
     font-size: 1.3rem;
     padding: 1rem 0;
+    text-align: justify;
 
 
 }
@@ -243,7 +243,6 @@ main .hero .container-fluid .formulario div input , main .hero .container-fluid 
 .cards-individuales .container .cards-individuales__fila1 .card:hover{
     box-shadow: 2px 2px 5px 2px black;
     cursor: pointer;
-    scale: 1.1;
 }
 .cards-individuales .container .cards-individuales__fila1 .card .card-body .nombre{
     font-family: var(--font-family9);
@@ -255,20 +254,154 @@ main .hero .container-fluid .formulario div input , main .hero .container-fluid 
     text-align: justify;
 }
 
+
+/* !ICONOS CARDS */
 .cards-individuales .container .cards-individuales__fila1 .card .card-body i{
-    font-size: 3rem;
+    font-size: 3.5rem;
     position: absolute;
     top: -1rem;
     right: -1rem;
 }
-.cards-individuales .container .cards-individuales__fila1 .card:nth-child(1) .card-body i{
+/* !ICONO AUGUSTO */
+.cards-individuales .container .cards-individuales__fila1 .col:nth-child(1) .card-body i{
+    color: red;
+}
+.cards-individuales .container .cards-individuales__fila1 .col:nth-child(1) .card-body i:hover{
+    animation: zoom 1s ease;
+}
+/* !ICONO NAY */
+.cards-individuales .container .cards-individuales__fila1 .col:nth-child(2) .card-body i{
     color: rebeccapurple;
-    animation: zoom 1s ease infinite;
+}
+.cards-individuales .container .cards-individuales__fila1 .col:nth-child(2) .card-body i:hover{
+    animation: giro 1.6s ease alternate;
+}
+/* !ICONO DONATO */
+.cards-individuales .container .cards-individuales__fila1 .col:nth-child(3) .card-body i{
+    color: rgb(67, 57, 57);
+}
+.cards-individuales .container .cards-individuales__fila1 .col:nth-child(3) .card-body i:hover{
+    animation: tembleque 1s ease ;
+}
+/* !ICONO FRIDA */
+.cards-individuales .container .cards-individuales__fila1 .col:nth-child(4) .card-body i{
+    color: rgb(8, 163, 36);
+}
+.cards-individuales .container .cards-individuales__fila1 .col:nth-child(4) .card-body i:hover{
+    animation: opacidad 1s ease ;
 }
 
 
+.links-page-move{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+.links-page-move a{
+    text-decoration: none;
+    font-family: var(--font-family7);
+    font-size: 3rem;
+    color: var(--color3);
+    transition: 0.5s;
+}
+.links-page-move a:hover{
+    color: var(--color1);
+}
 
+
+.paginass{
+    margin: 0 auto;
+    height: 100%;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 7rem;
+}
+.paginass h2{
+    text-align: center;
+    font-family: var(--font-family6);
+    font-size: 4rem;
+    padding: 1rem;
+}
+.paginass iframe{
+    display: block;
+    margin: 0 auto;
+    height: 80vh;
+    width: 90vw;
+    overflow: scroll;
+}
+.paginass .paleta{
+    height: 55%;
+}
+/* !ACTIVIDADES */
+.actividades{
+    padding-top: 7rem;
+}
+/* !Carousel-indicadores */
+.actividades .carousel .carousel-indicators button{
+    background-color: black;
+    height: 0.3rem;
+    width: 4rem;
     
+}
+/* !Carousel-items */
+.actividades .carousel .carousel-inner .carousel-item{
+    height: 85vh;
+}
+/* !Carousel-items-image */
+/* !PAGOS */
+.actividades .carousel .carousel-inner .carousel-item:nth-child(1) .carousel-image{
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/images//cuentaswsp.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/* !MUSICA */
+.actividades .carousel .carousel-inner .carousel-item:nth-child(2) .carousel-image{
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/images/libreria.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+/* !LIBRERIA */
+.actividades .carousel .carousel-inner .carousel-item:nth-child(3) .carousel-image{
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/images/libros.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/* !PALETA */
+.actividades .carousel .carousel-inner .carousel-item:nth-child(4) .carousel-image{
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/images/paleta.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/* !CAPTIONS */
+.actividades .carousel .carousel-item .carousel-caption{
+    background-color: #3022aa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: 4px solid white;
+}
+/* !NEXT AND PREV */
+.actividades .carousel .carousel-control-next , .carousel-control-prev {
+    background-color: var(--color1);
+    width: 5rem;
+}
+
 
 /* !PIZARRA */
 
@@ -520,6 +653,12 @@ footer .icons-links ul li a i:hover{
 
 
 /* !ANIMACIONES */
+@keyframes opacidad{
+    0%{opacity: 1;}
+    30%{opacity: 0.5;}
+    60%{opacity: 1;}
+    100%{opacity: 0.5;}
+}
 
 
 @keyframes tembleque {
@@ -543,9 +682,17 @@ footer .icons-links ul li a i:hover{
 
 @keyframes zoom {
     0%{transform: scale(1);}
-    20%{transform: scale(1.3);}
-    40%{transform: scale(1);}
-    60%{transform: scale(1.3);}
-    80%{transform: scale(1);}
+    15%{transform: scale(1.3);}
+    30%{transform: scale(1);}
+    45%{transform: scale(1.3);}
+    60%{transform: scale(1);}
+    75%{transform: scale(1.3);}
     100%{transform: scale(1);}
+}
+
+@keyframes giro {
+    0%{transform: rotate(0);}
+    50%{transform: rotate(360deg);}
+    100%{transform: rotate(0deg);}
+    
 }
