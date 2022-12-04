@@ -404,6 +404,115 @@ height: 100%;
 .pizarra {
     padding-top: 7rem;
 }
+.pizarra .tittle{
+    text-align: center;
+    font-family: 2.9rem;
+}
+.pizarra .container-fluid{
+    background-image: url(../assets/images/texturacorcho8.jpg);
+    background-size: cover;
+    box-shadow: inset 0px 0px 20px 1px black;
+    margin: 1rem auto 15rem auto;
+    width: 95vw;
+    height: 95vh;
+    border-style: inset;
+    border-width: 2rem;
+    border-image-source: url(../assets/images/bordertextura3.jpg);
+    border-image-slice: 60 30;
+    position: relative;
+    font-size: 1rem;
+    
+}
+.pizarra .container-fluid .pizarra__fila1{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.pizarra .container-fluid .pizarra__fila1 .calendar iframe{
+    height: 50vh;
+    width: 30vw;
+    margin-top: 4rem;
+
+
+}
+.pizarra .container-fluid .posit{
+    height: 30vh;
+    width: 15vw;
+    margin-top: 4rem;
+    border: 2px solid;
+}
+.pizarra .container-fluid .pizarra__fila1 .posit_1{
+    background-color: #cfc;
+    transform: rotate(-5deg);
+}
+.pizarra .container-fluid .pizarra__fila1 .posit_1::placeholder{
+    text-align: center;
+    color: black;
+    font-size: 1.5vw;
+    font-family:var(--font-family6);
+}
+.pizarra .container-fluid .pizarra__fila1 .posit_2{
+    background-color: #fcf;
+    transform: rotate(5deg);
+
+}
+.pizarra .container-fluid .pizarra__fila1 .posit_2::placeholder{
+    text-align: center;
+    color: black;
+    font-size: 1.5vw;
+    font-family:var(--font-family6);
+}
+.pizarra .container-fluid .pizarra__fila2{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.pizarra .container-fluid .pizarra__fila2 .papel{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+}
+.pizarra .container-fluid .pizarra__fila2 .posit__3{
+    background-color: #fcc;
+    position: relative;
+    bottom: 10rem;
+
+}
+.pizarra .container-fluid .pizarra__fila2 .posit__3::placeholder{
+    text-align: center;
+    color: black;
+    font-size: 1.5vw;
+    font-family:var(--font-family6);
+}
+
+.papel__links{
+    background: url(../assets/images/papel.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    list-style: none;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 2rem;
+}
+.papel__links li{
+    font-size: 1.5vw;
+    
+    
+    
+}
+.papel__links li a:hover{
+    color: var(--color3);
+}
+.papel__links li a{
+    color: var(--color1);
+    text-decoration: none;
+    font-family: var(--font-family1);
+}
+
+
 
 .pizarra__content {
     background-image: url(../assets/images/texturacorcho8.jpg);
@@ -411,7 +520,7 @@ height: 100%;
     box-shadow: inset 0px 0px 20px 1px black;
     margin: 1rem auto 15rem auto;
     width: 95vw;
-    height: 800px;
+    height: 100%;
     border-style: inset;
     border-width: 3rem;
     border-image-source: url(../assets/images/bordertextura3.jpg);
