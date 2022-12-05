@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   padding: 0;
@@ -8,6 +9,9 @@
 html {
   padding: 0; }
 
+/* !FUENTES TEXTO */
+/* !COLORES */
+/* !TAMAÑOS FUENTE */
 /* !ANIMACIONES */
 @keyframes opacidad {
   0% {
@@ -116,16 +120,16 @@ main .hero {
     height: 85vh;
     overflow: hidden; }
     main .hero .container-fluid .name h1 {
-      font-family: var(--font-family6);
+      font-family: "Pacifico", sans-serif;
       font-size: 7vw;
-      color: var(--color3);
-      text-shadow: 3px 3px 4px black;
+      color: #F7B801;
+      text-shadow: 3px 3px 4px #000;
       cursor: pointer; }
     main .hero .container-fluid .ask h2 {
-      font-family: var(--font-family7);
-      color: whitesmoke;
+      font-family: "Quicksand", sans-serif;
+      color: #fff;
       font-size: 2.5vw;
-      text-shadow: 1px 1px 5px black;
+      text-shadow: 1px 1px 5px #000;
       padding-bottom: 2rem; }
     main .hero .container-fluid .formulario div {
       padding: 0; }
@@ -144,15 +148,15 @@ main .hero {
       justify-content: center;
       align-items: center;
       text-decoration: none;
-      color: black;
+      color: #000;
       animation: tembleque 2s ease infinite; }
 
 /* !Informacion */
 .info {
   padding-top: 5rem; }
   .info .informacion .principal .texto article p {
-    font-family: var(--font-family7);
-    font-size: 1rem; }
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.3rem; }
   .info .informacion .principal .a-go {
     height: 6rem;
     width: 6rem;
@@ -164,15 +168,23 @@ main .hero {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: black;
+    color: #000;
     animation: tembleque 2s ease infinite; }
 
 /* !Go */
 .go {
   padding-top: 5rem; }
-  .go .container div p {
-    font-family: var(--font-family7);
-    font-size: 2.5vw; }
+  .go .container div .pregunta {
+    font-family: "Quicksand", sans-serif;
+    font-size: 3rem;
+    color: #F7B801; }
+  .go .container div .linkgo {
+    color: #3022aa;
+    font-size: 2.7rem;
+    font-family: "Pacifico", sans-serif;
+    transition: 0.5s; }
+    .go .container div .linkgo:hover {
+      color: #7678ED; }
   .go .container .a-hero {
     height: 6rem;
     width: 6rem;
@@ -184,7 +196,7 @@ main .hero {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: black;
+    color: #000;
     animation: tembleque 2s ease infinite; }
     .go .container .a-hero i {
       transform: rotate(180deg); }
@@ -195,8 +207,8 @@ main .hero {
   padding-top: 7rem;
   overflow: hidden; }
   .nosotros .container .nosotros__fila1 .tittle__equipo {
-    font-family: var(--font-family7);
-    font-size: 3.2rem;
+    font-family: "Reenie Beanie", cursive;
+    font-size: 5rem;
     padding: 2rem 0; }
   .nosotros .container .nosotros__fila2 img {
     width: 100%;
@@ -208,6 +220,7 @@ main .hero {
     .nosotros .container .nosotros__fila2 img:hover {
       filter: grayscale(0); }
   .nosotros .container .nosotros__fila3 p {
+    font-family: "Quicksand", sans-serif;
     font-size: 1.3rem;
     padding: 1rem 0;
     text-align: justify; }
@@ -221,10 +234,10 @@ main .hero {
       box-shadow: 2px 2px 5px 2px black;
       cursor: pointer; }
     .cards-individuales .container .cards-individuales__fila1 .card .card-body .nombre {
-      font-family: var(--font-family9);
+      font-family: "Reenie Beanie", cursive;
       font-size: 3rem; }
     .cards-individuales .container .cards-individuales__fila1 .card .card-body .presentacion {
-      font-family: var(--font-family7);
+      font-family: "Quicksand", sans-serif;
       text-align: justify; }
     .cards-individuales .container .cards-individuales__fila1 .card .card-body i {
       font-size: 3.5rem;
@@ -232,19 +245,19 @@ main .hero {
       top: -1rem;
       right: -1rem; }
     .cards-individuales .container .cards-individuales__fila1 .card .card-body .icono-augusto {
-      color: red; }
+      color: #F35B04; }
       .cards-individuales .container .cards-individuales__fila1 .card .card-body .icono-augusto:hover {
         animation: zoom 1s ease; }
     .cards-individuales .container .cards-individuales__fila1 .card .card-body .icono-nayeli {
-      color: rebeccapurple; }
+      color: #3022aa; }
       .cards-individuales .container .cards-individuales__fila1 .card .card-body .icono-nayeli:hover {
         animation: giro 1.6s ease alternate; }
     .cards-individuales .container .cards-individuales__fila1 .card .card-body .icono-donato {
-      color: green; }
+      color: #F35B04; }
       .cards-individuales .container .cards-individuales__fila1 .card .card-body .icono-donato:hover {
         animation: tembleque 0.7s ease; }
     .cards-individuales .container .cards-individuales__fila1 .card .card-body .icono-frida {
-      color: brown; }
+      color: #F7B801; }
       .cards-individuales .container .cards-individuales__fila1 .card .card-body .icono-frida:hover {
         animation: opacidad 1s ease; }
 
@@ -254,14 +267,13 @@ main .hero {
   justify-content: center;
   padding: 1rem 0; }
   .links-page-move a {
-    text-decoration: none;
-    font-family: var(--font-family7);
-    font-size: 3rem;
-    color: var(--color3);
+    font-family: "Pacifico", sans-serif;
+    font-size: 2.7rem;
+    color: #3022aa;
     transition: 0.5s;
     text-align: center; }
     .links-page-move a:hover {
-      color: var(--color2); }
+      color: #7678ED; }
 
 /* !FIN NOSOTROS */
 /* !START ACTIVIDADES */
@@ -269,8 +281,8 @@ main .hero {
   padding-top: 7rem; }
   .modulos .modulos__contenedor h1 {
     text-align: center;
-    font-family: var(--font-family7);
-    font-size: 2.9rem;
+    font-family: "Reenie Beanie", cursive;
+    font-size: 5rem;
     padding: 0.5rem; }
   .modulos .modulos__contenedor h2 {
     text-align: center;
@@ -286,17 +298,17 @@ main .hero {
     margin: 0 15%;
     border-radius: 1rem; }
     .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item .carousel__text h3 {
-      font-family: var(--font-family7);
+      font-family: "Quicksand", sans-serif;
       font-size: 2vw; }
     .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item .carousel__text p {
-      font-family: var(--font-family7);
+      font-family: "Quicksand", sans-serif;
       font-size: 1.1vw; }
     .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item .carousel__text button {
       text-decoration: none;
       font-size: 1.5vw;
-      font-family: var(--font-family7);
+      font-family: "Quicksand", sans-serif;
       font-weight: bold;
-      background-color: var(--color3);
+      background-color: #F7B801;
       border: none; }
   .modulos .carousel-control-next span, .modulos .carousel-control-prev span {
     background-color: rgba(252, 5, 5, 0.3);
@@ -308,12 +320,12 @@ main .hero {
   padding-top: 7rem; }
   .pizarra .tittle {
     text-align: center;
-    font-size: 2.9rem;
-    font-family: var(--font-family7); }
+    font-size: 5rem;
+    font-family: "Reenie Beanie", cursive; }
   .pizarra .container-fluid {
     background-image: url(../assets/images/texturacorcho8.jpg);
     background-size: cover;
-    box-shadow: inset 0px 0px 20px 1px black;
+    box-shadow: inset 0px 0px 20px 1px #000;
     margin: 1rem auto 15rem auto;
     width: 95vw;
     height: 100vh;
@@ -340,17 +352,17 @@ main .hero {
         transform: rotate(-5deg); }
         .pizarra .container-fluid .pizarra__fila1 .posit_1::placeholder {
           text-align: center;
-          color: black;
+          color: #000;
           font-size: 1.5vw;
-          font-family: var(--font-family6); }
+          font-family: "Pacifico", sans-serif; }
       .pizarra .container-fluid .pizarra__fila1 .posit_2 {
         background-color: #fcf;
         transform: rotate(5deg); }
         .pizarra .container-fluid .pizarra__fila1 .posit_2::placeholder {
           text-align: center;
-          color: black;
+          color: #000;
           font-size: 1.5vw;
-          font-family: var(--font-family6); }
+          font-family: "Pacifico", sans-serif; }
     .pizarra .container-fluid .pizarra__fila2 {
       display: flex;
       justify-content: center;
@@ -373,9 +385,9 @@ main .hero {
           .pizarra .container-fluid .pizarra__fila2 .papel .papel__links li {
             font-size: 1.5vw; }
             .pizarra .container-fluid .pizarra__fila2 .papel .papel__links li a {
-              color: var(--color1);
+              color: #3022aa;
               text-decoration: none;
-              font-family: var(--font-family1); }
+              font-family: "Oswald", sans-serif; }
               .pizarra .container-fluid .pizarra__fila2 .papel .papel__links li a:hover {
                 color: var(--color3); }
       .pizarra .container-fluid .pizarra__fila2 .posit__3 {
@@ -385,20 +397,27 @@ main .hero {
         right: 7rem; }
         .pizarra .container-fluid .pizarra__fila2 .posit__3::placeholder {
           text-align: center;
-          color: black;
+          color: #000;
           font-size: 1.5vw;
-          font-family: var(--font-family6); }
+          font-family: "Pacifico", sans-serif; }
 
 /* FIN PIZARRA */
 /* !START CONTACTO */
 .formularios {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding-top: 7rem; }
+  .formularios h1 {
+    color: #000;
+    font-size: 5rem;
+    font-family: "Reenie Beanie", cursive;
+    flex-basis: 100%;
+    text-align: center; }
   .formularios .container-contacto {
     padding: 3rem;
     margin-top: 4rem;
-    background-color: var(--color3);
+    background-color: #F7B801;
     max-width: 45%;
     border-radius: 20px;
     padding-top: 7rem; }

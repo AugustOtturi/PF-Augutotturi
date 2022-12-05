@@ -5,13 +5,13 @@
     padding-top: 7rem;
     .tittle{
         text-align: center;
-        font-size: 2.9rem;
-        font-family: var(--font-family7);
+        font-size: $size-tittle;
+        font-family: $font-family3;
     }
     .container-fluid{
         background-image: url(../assets/images/texturacorcho8.jpg);
         background-size: cover;
-        box-shadow: inset 0px 0px 20px 1px black;
+        box-shadow: inset 0px 0px 20px 1px $color-black;
         margin: 1rem auto 15rem auto;
         width: 95vw;
         height: 100vh;
@@ -43,9 +43,9 @@
                 transform: rotate(-5deg);
                 &::placeholder{
                     text-align: center;
-                    color: black;
+                    color: $color-black;
                     font-size: 1.5vw;
-                    font-family:var(--font-family6);
+                    font-family:$font-family-links;
                 }
             }
             .posit_2{
@@ -53,9 +53,9 @@
                 transform: rotate(5deg);
                 &::placeholder{
                     text-align: center;
-                    color: black;
+                    color: $color-black;
                     font-size: 1.5vw;
-                    font-family:var(--font-family6);
+                    font-family:$font-family-links;
                 }
             }
         }
@@ -81,9 +81,9 @@
                     li{
                         font-size: 1.5vw;
                         a{
-                            color: var(--color1);
+                            color: $color1;
                             text-decoration: none;
-                            font-family: var(--font-family1);
+                            font-family: $font-family1;
                             &:hover{
                                 color: var(--color3);
                             }
@@ -98,9 +98,9 @@
                 right: 7rem;
                 &::placeholder{
                     text-align: center;
-                    color: black;
+                    color: $color-black;
                     font-size: 1.5vw;
-                    font-family:var(--font-family6);
+                    font-family:$font-family-links;
                 }
             }
         }

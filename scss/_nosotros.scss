@@ -7,8 +7,8 @@
     .container{
         .nosotros__fila1{
             .tittle__equipo{
-                font-family: var(--font-family7);
-                font-size: 3.2rem;
+                font-family: $font-family3;
+                font-size: $size-tittle;
                 padding: 2rem 0;
 
             }
@@ -29,7 +29,8 @@
         }
         .nosotros__fila3{
             p{
-                font-size: 1.3rem;
+                font-family: $font-family2;
+                font-size: $size-texto-p;
                 padding: 1rem 0;
                 text-align: justify;
             }
@@ -50,11 +51,11 @@
                 }
                 .card-body{
                     .nombre{
-                        font-family: var(--font-family9);
-                        font-size: 3rem;
+                        font-family: $font-family3;
+                        font-size: $size-subtittle;
                     }
                     .presentacion{
-                        font-family: var(--font-family7);
+                        font-family: $font-family2;
                         text-align: justify;
                     }
                     i{
@@ -64,27 +65,27 @@
                         right: -1rem;
                     }
                     .icono-augusto{
-                        color: red;
+                        color: $color5;
                         &:hover{
                             animation: zoom 1s ease;
                         }
                     }
                     .icono-nayeli{
-                        color: rebeccapurple;
+                        color: $color1;
                         &:hover{
                             animation: giro 1.6s ease alternate;
     
                         }
                     }
                     .icono-donato{
-                        color: green;
+                        color: $color5;
                         &:hover{
                             animation: tembleque 0.7s ease;
     
                         }
                     }
                     .icono-frida{
-                        color: brown;
+                        color: $color3;
                         &:hover{
                             animation: opacidad 1s ease;
                         }
@@ -101,14 +102,13 @@
     justify-content: center;
     padding: 1rem 0;
     a{
-        text-decoration: none;
-        font-family: var(--font-family7);
-        font-size: 3rem;
-        color: var(--color3);
+        font-family: $font-family-links;
+        font-size:$size-links ;
+        color: $color-link;
         transition: 0.5s;
         text-align: center;
         &:hover{
-            color: var(--color2);
+            color: $color-link-hover;
         }
 
     }

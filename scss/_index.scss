@@ -15,19 +15,19 @@ main{
             overflow: hidden;
             .name{
                 h1{
-                    font-family: var(--font-family6);
+                    font-family: $font-family-links;
                     font-size: 7vw;
-                    color: var(--color3);
-                    text-shadow: 3px 3px 4px black;
+                    color: $color3 ;
+                    text-shadow: 3px 3px 4px $color-black;
                     cursor: pointer;
                 }
             }
             .ask{
                 h2{
-                    font-family: var(--font-family7);
-                    color: whitesmoke;
+                    font-family: $font-family2;
+                    color: $color-white;
                     font-size: 2.5vw;
-                    text-shadow: 1px 1px 5px black;
+                    text-shadow: 1px 1px 5px $color-black;
                     padding-bottom: 2rem;
                 }
             }
@@ -54,7 +54,7 @@ main{
                 justify-content: center;
                 align-items: center;
                 text-decoration: none;
-                color: black;
+                color: $color-black;
                 animation: tembleque 2s ease infinite;
             }
 
@@ -71,8 +71,8 @@ main{
             .texto{
                 article{
                     p{
-                        font-family: var(--font-family7);
-                        font-size: 1rem;
+                        font-family: $font-family2;
+                        font-size: $size-texto-p;
 
                     }
                 }
@@ -88,7 +88,7 @@ main{
                 justify-content: center;
                 align-items: center;
                 text-decoration: none;
-                color: black;
+                color: $color-black;
                 animation: tembleque 2s ease infinite;
 
             }
@@ -101,9 +101,19 @@ main{
     padding-top: 5rem;
     .container{
         div{
-            p{
-                font-family: var(--font-family7);
-                font-size: 2.5vw;
+            .pregunta{
+                font-family: $font-family2;
+                font-size: $size-subtittle;
+                color: $color3;
+            }
+            .linkgo{
+                color: $color-link;
+                font-size: $size-links;
+                font-family: $font-family-links;
+                transition: 0.5s;
+                &:hover{
+                    color: $color-link-hover;
+                }
             }
         }
         .a-hero{
@@ -117,7 +127,7 @@ main{
             justify-content: center;
             align-items: center;
             text-decoration: none;
-            color: black;
+            color: $color-black;
             animation: tembleque 2s ease infinite;
             i{
                 transform: rotate(180deg);

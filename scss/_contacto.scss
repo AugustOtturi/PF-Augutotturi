@@ -2,13 +2,21 @@
 
 /* !START CONTACTO */
 .formularios {
+    h1{
+        color: $color-black;
+        font-size: $size-tittle;
+        font-family: $font-family3;
+        flex-basis: 100%;
+        text-align: center;
+    }
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding-top: 7rem;
     .container-contacto{
         padding: 3rem;
         margin-top: 4rem;
-        background-color: var(--color3);
+        background-color: $color3;
         max-width: 45%;
         border-radius: 20px;
         padding-top: 7rem;

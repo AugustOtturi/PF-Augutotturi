@@ -5,13 +5,13 @@
     .modulos__contenedor{
         h1{
             text-align: center;
-            font-family: var(--font-family7);
-            font-size: 2.9rem;
+            font-family: $font-family3;
+            font-size: $size-tittle;
             padding: 0.5rem;
         }
         h2{
             text-align: center;
-            font-size: 1.3rem;
+            font-size: $size-texto-p;
             margin: 0 10%;
             padding-bottom: 2rem;
 
@@ -29,19 +29,19 @@
                         margin: 0 15%;
                         border-radius: 1rem;
                         h3{
-                            font-family: var(--font-family7);
+                            font-family: $font-family2 ;
                             font-size: 2vw;
                         }
                         p{
-                            font-family: var(--font-family7);
+                            font-family: $font-family2 ;
                             font-size: 1.1vw;
                         }
                         button{
                             text-decoration: none;
                             font-size: 1.5vw;
-                            font-family: var(--font-family7);
+                            font-family: $font-family2 ;
                             font-weight: bold;
-                            background-color: var(--color3);
+                            background-color: $color3;
                             border: none;
                         }
                     }
