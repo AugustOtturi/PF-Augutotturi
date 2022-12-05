@@ -5,6 +5,9 @@
   font-family: 'Allerta', sans-serif;
   scroll-behavior: smooth; }
 
+html {
+  padding: 0; }
+
 /* !ANIMACIONES */
 @keyframes opacidad {
   0% {
@@ -261,6 +264,45 @@ main .hero {
       color: var(--color2); }
 
 /* !FIN NOSOTROS */
+/* !START ACTIVIDADES */
+.modulos {
+  padding-top: 7rem; }
+  .modulos .modulos__contenedor h1 {
+    text-align: center;
+    font-family: var(--font-family7);
+    font-size: 2.9rem;
+    padding: 0.5rem; }
+  .modulos .modulos__contenedor h2 {
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 0 10%;
+    padding-bottom: 2rem; }
+  .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item img {
+    display: block;
+    margin: 0 auto;
+    width: 85vw; }
+  .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item .carousel__text {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 15%;
+    border-radius: 1rem; }
+    .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item .carousel__text h3 {
+      font-family: var(--font-family7);
+      font-size: 2vw; }
+    .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item .carousel__text p {
+      font-family: var(--font-family7);
+      font-size: 1.1vw; }
+    .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item .carousel__text button {
+      text-decoration: none;
+      font-size: 1.5vw;
+      font-family: var(--font-family7);
+      font-weight: bold;
+      background-color: var(--color3);
+      border: none; }
+  .modulos .carousel-control-next span, .modulos .carousel-control-prev span {
+    background-color: rgba(252, 5, 5, 0.3);
+    height: 100%; }
+
+/* !FIN ACTIVIDADES  */
 /* !START PIZARRA */
 .pizarra {
   padding-top: 7rem; }
@@ -348,6 +390,27 @@ main .hero {
           font-family: var(--font-family6); }
 
 /* FIN PIZARRA */
+/* !START CONTACTO */
+.formularios {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 7rem; }
+  .formularios .container-contacto {
+    padding: 3rem;
+    margin-top: 4rem;
+    background-color: var(--color3);
+    max-width: 45%;
+    border-radius: 20px;
+    padding-top: 7rem; }
+    .formularios .container-contacto form .botones {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 2rem;
+      width: 50%;
+      margin: 2rem auto; }
+
+/* !FIN CONTACTO */
 /* !MEDIAS PERSONALIZADOS */
 @media (max-width: 1200px) {
   .nosotros .container .nosotros__fila2 img {
@@ -458,67 +521,3 @@ main .hero {
   --color3: #F7B801;
   --color4: #F18701;
   --color5: #F35B04; }
-
-html {
-  padding: 0; }
-
-/* !START ACTIVIDADES */
-.modulos {
-  padding-top: 7rem; }
-  .modulos .modulos__contenedor h1 {
-    text-align: center;
-    font-family: var(--font-family7);
-    font-size: 2.9rem;
-    padding: 0.5rem; }
-  .modulos .modulos__contenedor h2 {
-    text-align: center;
-    font-size: 1.3rem;
-    margin: 0 10%;
-    padding-bottom: 2rem; }
-  .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item img {
-    display: block;
-    margin: 0 auto;
-    width: 85vw; }
-  .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item .carousel__text {
-    background-color: rgba(0, 0, 0, 0.5);
-    margin: 0 15%;
-    border-radius: 1rem; }
-    .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item .carousel__text h3 {
-      font-family: var(--font-family7);
-      font-size: 2vw; }
-    .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item .carousel__text p {
-      font-family: var(--font-family7);
-      font-size: 1.1vw; }
-    .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item .carousel__text button {
-      text-decoration: none;
-      font-size: 1.5vw;
-      font-family: var(--font-family7);
-      font-weight: bold;
-      background-color: var(--color3);
-      border: none; }
-  .modulos .carousel-control-next span, .modulos .carousel-control-prev span {
-    background-color: rgba(252, 5, 5, 0.3);
-    height: 100%; }
-
-/* !FIN ACTIVIDADES  */
-/* !START CONTACTO */
-.formularios {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 7rem; }
-  .formularios .container-contacto {
-    padding: 3rem;
-    margin-top: 4rem;
-    background-color: var(--color3);
-    max-width: 45%;
-    border-radius: 20px;
-    padding-top: 7rem; }
-    .formularios .container-contacto form .botones {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin-top: 2rem;
-      width: 50%;
-      margin: 2rem auto; }
-
-/* !FIN CONTACTO */

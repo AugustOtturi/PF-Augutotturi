@@ -1,0 +1,28 @@
+
+
+/* !START CONTACTO */
+.formularios {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 7rem;
+    .container-contacto{
+        padding: 3rem;
+        margin-top: 4rem;
+        background-color: var(--color3);
+        max-width: 45%;
+        border-radius: 20px;
+        padding-top: 7rem;
+        form{
+            .botones{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 2rem;
+                width: 50%;
+                margin: 2rem auto;
+
+            }
+        }
+    }
+}
+/* !FIN CONTACTO */
