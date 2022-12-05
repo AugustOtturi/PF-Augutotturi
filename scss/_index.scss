@@ -1,0 +1,130 @@
+
+/* !START INDEX */
+/* !Hero */
+main{
+    .hero{
+        padding-top: 7rem;
+        .container-fluid{
+            padding: 0;
+            background-image: url(../assets/images/roomie1.jpg);
+            background: url(../assets/images/roomie2.jpg);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 85vh;
+            overflow: hidden;
+            .name{
+                h1{
+                    font-family: var(--font-family6);
+                    font-size: 7vw;
+                    color: var(--color3);
+                    text-shadow: 3px 3px 4px black;
+                    cursor: pointer;
+                }
+            }
+            .ask{
+                h2{
+                    font-family: var(--font-family7);
+                    color: whitesmoke;
+                    font-size: 2.5vw;
+                    text-shadow: 1px 1px 5px black;
+                    padding-bottom: 2rem;
+                }
+            }
+            .formulario{
+                div{
+                    padding: 0;
+                    input , button{
+                        border-radius: 0px;
+                        padding: 0.7rem;
+
+                    }
+
+                }
+            }
+            .a-info{
+                height: 6rem;
+                width: 6rem;
+                position: absolute;
+                right: 3rem;
+                bottom: 5rem;
+                background-color: rgba(189, 189, 222, 0.5);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: black;
+                animation: tembleque 2s ease infinite;
+            }
+
+        }
+    }
+    
+}
+
+/* !Informacion */
+.info{
+    padding-top: 5rem;
+    .informacion{
+        .principal{
+            .texto{
+                article{
+                    p{
+                        font-family: var(--font-family7);
+                        font-size: 1rem;
+
+                    }
+                }
+            }
+            .a-go{
+                height: 6rem;
+                width: 6rem;
+                position: relative;
+                top: -9rem;
+                background-color: rgba(189, 189, 222, 0.5);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: black;
+                animation: tembleque 2s ease infinite;
+
+            }
+        }
+    }
+}
+
+/* !Go */
+.go{
+    padding-top: 5rem;
+    .container{
+        div{
+            p{
+                font-family: var(--font-family7);
+                font-size: 2.5vw;
+            }
+        }
+        .a-hero{
+            height: 6rem;
+            width: 6rem;
+            position: absolute;
+            right: 2rem;
+            background-color: rgba(189, 189, 222, 0.5);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            animation: tembleque 2s ease infinite;
+            i{
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+}
+
+/* !FIN INDEX */

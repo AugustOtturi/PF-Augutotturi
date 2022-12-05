@@ -1,0 +1,195 @@
+/* !MEDIAS PERSONALIZADOS */
+@media (max-width: 1200px){
+    .nosotros{
+        .container{
+            .nosotros__fila2{
+                img{
+                    height: 40vw;
+                }
+
+            }
+        }
+    }
+    .cards-individuales{
+        .container{
+            .cards-individuales__fila1{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                .col{
+                    margin: 2rem 0;
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+@media (max-width: 992px) {
+    header{
+        nav{
+            .container-fluid{
+                .navbar-collapse{
+                    ul{
+                        li{
+                            &::before{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:767px) {
+    /* INDEX MEDIA */
+main{
+    .hero{
+        .container-fluid{
+            .name{
+                h1{
+                    font-size: 14vw;
+                }
+            }
+            .ask{
+                h2{
+                    font-size: 6vw;
+                }
+            }
+            .a-info{
+                display: none;
+            }
+        }
+    }
+    .info{
+        .informacion{
+            .principal{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                overflow: hidden;
+                .col-animacion , .col-texto{
+                    width: 100%;
+                    text-align: justify;
+                }
+                .a-go{
+                    display: none;
+                }
+                .texto{
+                    article{
+                        width: 100vw;
+                    }
+                }
+            }
+            .article{
+                .texto{
+                    div{
+                        p{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .go{
+        .container{
+                p{
+                    font-family: var(--font-family7);
+                    font-size: 5vw;
+                }
+            
+            .a-hero{
+                display: none;
+            }
+        }    
+    }
+}
+
+
+    /* !PIZARRA MEDIA */
+
+    .pizarra{
+        height: 100%;
+        .container-fluid{
+            height: 100%;
+            .pizarra__fila1{
+                flex-direction: column;
+                align-items: center;
+                .calendar{
+                    align-items: center;
+                    width: 70vw;
+                    iframe{
+                        width: 100%;
+                    }
+                }
+                .postit{
+                    width: 50vw;
+                    .posit{
+                        width: 100%;
+                        transform: rotate(0deg);
+                        &::placeholder{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+            .pizarra__fila2{
+                flex-direction: column;
+                align-items: center;
+                .papel{
+                    width: 50vw;
+                    margin-top: 2rem;
+                    margin-right: 1rem;
+                    .papel__links{
+                        width: 100%;
+                        height: 50vh;
+                        padding: 0;
+                        justify-content: center;
+                        align-items: center;
+                        li{
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+                .postit{
+                    width: 50vw;
+                    justify-content: center;
+                    .posit{
+                        width: 100%;
+                        position: relative;
+                        bottom: 5rem;
+                        right: 0;
+                        &::placeholder{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 757px) {
+    .formularios {
+        flex-direction: column;
+        .container-contacto{
+            max-width: 90%;
+            form{
+                .botones{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}

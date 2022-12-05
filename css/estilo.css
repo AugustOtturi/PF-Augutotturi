@@ -5,22 +5,53 @@
   font-family: 'Allerta', sans-serif;
   scroll-behavior: smooth; }
 
-/* ! FUENTES UTILIZADAS Y COLORES */
-:root {
-  --font-family1: 'Oswald', sans-serif;
-  --font-family7: 'Quicksand', sans-serif;
-  --font-family9: 'Reenie Beanie', cursive;
-  --font-family6: 'Pacifico', sans-serif;
-  --color1: #3022aa;
-  --color2: #7678ED;
-  --color3: #F7B801;
-  --color4: #F18701;
-  --color5: #F35B04; }
+/* !ANIMACIONES */
+@keyframes opacidad {
+  0% {
+    opacity: 1; }
+  30% {
+    opacity: 0.5; }
+  60% {
+    opacity: 1; }
+  100% {
+    opacity: 0.5; } }
 
-html {
-  padding: 0; }
+@keyframes tembleque {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(-15deg); }
+  50% {
+    transform: rotate(15deg); }
+  75% {
+    transform: rotate(-15deg); }
+  100% {
+    transform: rotate(0deg); } }
 
-/* !HEADER */
+@keyframes zoom {
+  0% {
+    transform: scale(1); }
+  15% {
+    transform: scale(1.3); }
+  30% {
+    transform: scale(1); }
+  45% {
+    transform: scale(1.3); }
+  60% {
+    transform: scale(1); }
+  75% {
+    transform: scale(1.3); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes giro {
+  0% {
+    transform: rotate(0); }
+  50% {
+    transform: rotate(360deg); }
+  100% {
+    transform: rotate(0deg); } }
+
 header nav {
   background-color: rgba(255, 252, 252, 0.708); }
   header nav .container-fluid a img {
@@ -51,6 +82,22 @@ header nav {
   header nav .container-fluid .navbar-collapse ul li:hover::before {
     height: 3.5rem;
     transform: rotate(180deg); }
+
+/* !FOOTER START */
+footer .container-fluid {
+  background-color: var(--color4);
+  margin-top: 4rem;
+  overflow: hidden; }
+  footer .container-fluid .icons-links {
+    padding: 1rem 0; }
+    footer .container-fluid .icons-links ul li {
+      font-size: 2.7rem;
+      margin: 0 1rem; }
+      footer .container-fluid .icons-links ul li a i {
+        color: white;
+        text-shadow: 5px 5px 2px #928f8f; }
+        footer .container-fluid .icons-links ul li a i:hover {
+          scale: 1.3; }
 
 /* !START INDEX */
 /* !Hero */
@@ -214,45 +261,6 @@ main .hero {
       color: var(--color2); }
 
 /* !FIN NOSOTROS */
-/* !START ACTIVIDADES */
-.modulos {
-  padding-top: 7rem; }
-  .modulos .modulos__contenedor h1 {
-    text-align: center;
-    font-family: var(--font-family7);
-    font-size: 2.9rem;
-    padding: 0.5rem; }
-  .modulos .modulos__contenedor h2 {
-    text-align: center;
-    font-size: 1.3rem;
-    margin: 0 10%;
-    padding-bottom: 2rem; }
-  .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item img {
-    display: block;
-    margin: 0 auto;
-    width: 85vw; }
-  .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item .carousel__text {
-    background-color: rgba(0, 0, 0, 0.5);
-    margin: 0 15%;
-    border-radius: 1rem; }
-    .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item .carousel__text h3 {
-      font-family: var(--font-family7);
-      font-size: 2vw; }
-    .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item .carousel__text p {
-      font-family: var(--font-family7);
-      font-size: 1.1vw; }
-    .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item .carousel__text button {
-      text-decoration: none;
-      font-size: 1.5vw;
-      font-family: var(--font-family7);
-      font-weight: bold;
-      background-color: var(--color3);
-      border: none; }
-  .modulos .carousel-control-next span, .modulos .carousel-control-prev span {
-    background-color: rgba(252, 5, 5, 0.3);
-    height: 100%; }
-
-/* !FIN ACTIVIDADES  */
 /* !START PIZARRA */
 .pizarra {
   padding-top: 7rem; }
@@ -340,43 +348,6 @@ main .hero {
           font-family: var(--font-family6); }
 
 /* FIN PIZARRA */
-/* !START CONTACTO */
-.formularios {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 7rem; }
-  .formularios .container-contacto {
-    padding: 3rem;
-    margin-top: 4rem;
-    background-color: var(--color3);
-    max-width: 45%;
-    border-radius: 20px;
-    padding-top: 7rem; }
-    .formularios .container-contacto form .botones {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin-top: 2rem;
-      width: 50%;
-      margin: 2rem auto; }
-
-/* !FIN CONTACTO */
-/* !FOOTER START */
-footer .container-fluid {
-  background-color: var(--color4);
-  margin-top: 4rem;
-  overflow: hidden; }
-  footer .container-fluid .icons-links {
-    padding: 1rem 0; }
-    footer .container-fluid .icons-links ul li {
-      font-size: 2.7rem;
-      margin: 0 1rem; }
-      footer .container-fluid .icons-links ul li a i {
-        color: white;
-        text-shadow: 5px 5px 2px #928f8f; }
-        footer .container-fluid .icons-links ul li a i:hover {
-          scale: 1.3; }
-
 /* !MEDIAS PERSONALIZADOS */
 @media (max-width: 1200px) {
   .nosotros .container .nosotros__fila2 img {
@@ -476,49 +447,78 @@ footer .container-fluid {
       .formularios .container-contacto form .botones {
         width: 90%; } }
 
-/* !ANIMACIONES */
-@keyframes opacidad {
-  0% {
-    opacity: 1; }
-  30% {
-    opacity: 0.5; }
-  60% {
-    opacity: 1; }
-  100% {
-    opacity: 0.5; } }
+/* ! FUENTES UTILIZADAS Y COLORES */
+:root {
+  --font-family1: 'Oswald', sans-serif;
+  --font-family7: 'Quicksand', sans-serif;
+  --font-family9: 'Reenie Beanie', cursive;
+  --font-family6: 'Pacifico', sans-serif;
+  --color1: #3022aa;
+  --color2: #7678ED;
+  --color3: #F7B801;
+  --color4: #F18701;
+  --color5: #F35B04; }
 
-@keyframes tembleque {
-  0% {
-    transform: rotate(0deg); }
-  25% {
-    transform: rotate(-15deg); }
-  50% {
-    transform: rotate(15deg); }
-  75% {
-    transform: rotate(-15deg); }
-  100% {
-    transform: rotate(0deg); } }
+html {
+  padding: 0; }
 
-@keyframes zoom {
-  0% {
-    transform: scale(1); }
-  15% {
-    transform: scale(1.3); }
-  30% {
-    transform: scale(1); }
-  45% {
-    transform: scale(1.3); }
-  60% {
-    transform: scale(1); }
-  75% {
-    transform: scale(1.3); }
-  100% {
-    transform: scale(1); } }
+/* !START ACTIVIDADES */
+.modulos {
+  padding-top: 7rem; }
+  .modulos .modulos__contenedor h1 {
+    text-align: center;
+    font-family: var(--font-family7);
+    font-size: 2.9rem;
+    padding: 0.5rem; }
+  .modulos .modulos__contenedor h2 {
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 0 10%;
+    padding-bottom: 2rem; }
+  .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item img {
+    display: block;
+    margin: 0 auto;
+    width: 85vw; }
+  .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item .carousel__text {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 15%;
+    border-radius: 1rem; }
+    .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item .carousel__text h3 {
+      font-family: var(--font-family7);
+      font-size: 2vw; }
+    .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item .carousel__text p {
+      font-family: var(--font-family7);
+      font-size: 1.1vw; }
+    .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item .carousel__text button {
+      text-decoration: none;
+      font-size: 1.5vw;
+      font-family: var(--font-family7);
+      font-weight: bold;
+      background-color: var(--color3);
+      border: none; }
+  .modulos .carousel-control-next span, .modulos .carousel-control-prev span {
+    background-color: rgba(252, 5, 5, 0.3);
+    height: 100%; }
 
-@keyframes giro {
-  0% {
-    transform: rotate(0); }
-  50% {
-    transform: rotate(360deg); }
-  100% {
-    transform: rotate(0deg); } }
+/* !FIN ACTIVIDADES  */
+/* !START CONTACTO */
+.formularios {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 7rem; }
+  .formularios .container-contacto {
+    padding: 3rem;
+    margin-top: 4rem;
+    background-color: var(--color3);
+    max-width: 45%;
+    border-radius: 20px;
+    padding-top: 7rem; }
+    .formularios .container-contacto form .botones {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 2rem;
+      width: 50%;
+      margin: 2rem auto; }
+
+/* !FIN CONTACTO */

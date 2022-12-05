@@ -1,0 +1,118 @@
+
+
+/* !NOSOTROS START */
+.nosotros{
+    padding-top: 7rem;
+    overflow: hidden;
+    .container{
+        .nosotros__fila1{
+            .tittle__equipo{
+                font-family: var(--font-family7);
+                font-size: 3.2rem;
+                padding: 2rem 0;
+
+            }
+        }
+        .nosotros__fila2{
+            img{
+                width: 100%;
+                height: 90vh;
+                object-fit: contain;
+                filter: grayscale(1);
+                padding: 0;
+                transition: 0.3s all ease;
+                &:hover{
+                    filter: grayscale(0);
+                }
+
+            }
+        }
+        .nosotros__fila3{
+            p{
+                font-size: 1.3rem;
+                padding: 1rem 0;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+/* !Cards-individuales */
+.cards-individuales{
+    .container{
+        padding: 2rem 0;
+        .cards-individuales__fila1{
+            .card{
+                border: 3px solid orange;
+                &:hover{
+                    box-shadow: 2px 2px 5px 2px black;
+                    cursor: pointer;
+                }
+                .card-body{
+                    .nombre{
+                        font-family: var(--font-family9);
+                        font-size: 3rem;
+                    }
+                    .presentacion{
+                        font-family: var(--font-family7);
+                        text-align: justify;
+                    }
+                    i{
+                        font-size: 3.5rem;
+                        position: absolute;
+                        top: -1rem;
+                        right: -1rem;
+                    }
+                    .icono-augusto{
+                        color: red;
+                        &:hover{
+                            animation: zoom 1s ease;
+                        }
+                    }
+                    .icono-nayeli{
+                        color: rebeccapurple;
+                        &:hover{
+                            animation: giro 1.6s ease alternate;
+    
+                        }
+                    }
+                    .icono-donato{
+                        color: green;
+                        &:hover{
+                            animation: tembleque 0.7s ease;
+    
+                        }
+                    }
+                    .icono-frida{
+                        color: brown;
+                        &:hover{
+                            animation: opacidad 1s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Link */
+.links-page-move{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    a{
+        text-decoration: none;
+        font-family: var(--font-family7);
+        font-size: 3rem;
+        color: var(--color3);
+        transition: 0.5s;
+        text-align: center;
+        &:hover{
+            color: var(--color2);
+        }
+
+    }
+    
+}
+
+/* !FIN NOSOTROS */

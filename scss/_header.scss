@@ -1,0 +1,55 @@
+header{
+    nav{
+        background-color: rgba(255, 252, 252, 0.708);
+        .container-fluid{
+            a{
+                img{
+                    height: 5rem;
+                    width: 5rem;
+                    scale: 3;
+                    margin-left: 3rem;
+
+                }
+            }
+            .navbar-collapse{
+                ul{
+                    li{
+                        a{
+                            font-family: var(--font-family1);
+                            font-weight: bold;
+                            font-size: 1.5rem;
+                            color: black;
+                            transition: none;
+                            i{
+                                vertical-align: auto;
+                                font-size: 2rem;
+                                margin: 0 0.5rem;
+
+                            }
+                            &:hover{
+                                color: var(--color1);
+
+                            }
+
+                        }
+                        &::before{
+                            content: "";
+                            width: 0.6rem;
+                            height: 0rem;
+                            background-color: var(--color3);
+                            border-radius: 20px;
+                            transition: 400ms;
+                            position: absolute;
+
+                        }
+                        &:hover::before{
+                            height: 3.5rem;
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
