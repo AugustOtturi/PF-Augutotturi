@@ -426,6 +426,18 @@ main{
         max-width: 45%;
         border-radius: 20px;
         padding-top: $pd-7;
+        h2{
+            @include texto($font-family-links, map-get($tamaños-texto, size-tittle) - 1);
+            color: whitesmoke;
+            text-shadow: 2px 2px 2px black;
+            padding-bottom: 1rem;
+
+        }
+        h3{
+            text-align: center;
+            @include texto($font-family2, map-get($tamaños-texto, size-texto-p));
+            
+        }
         form{
             .botones{
                 @include flex-justify-align(space-around, center);

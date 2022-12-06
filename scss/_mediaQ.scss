@@ -151,6 +151,8 @@ main{
                         padding: $pd-0;
                         justify-content: center;
                         align-items: center;
+                        position: relative;
+                        right: 2rem;
                         li{
                             font-size: 1.4rem;
                         }
@@ -159,6 +161,8 @@ main{
                 .postit{
                     width: 50vw;
                     justify-content: center;
+                    order: -3;
+                    margin-top: 4rem;
                     .posit{
                         width: 100%;
                         position: relative;
