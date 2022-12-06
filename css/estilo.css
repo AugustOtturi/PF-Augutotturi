@@ -302,7 +302,8 @@ main .hero {
   .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item img {
     display: block;
     margin: 0 auto;
-    width: 85vw; }
+    width: 85vw;
+    object-fit: cover; }
   .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item .carousel__text {
     background-color: rgba(0, 0, 0, 0.5);
     margin: 0 15%;
@@ -328,6 +329,18 @@ main .hero {
   .modulos .carousel-control-next span, .modulos .carousel-control-prev span {
     background-color: rgba(252, 5, 5, 0.3);
     height: 100%; }
+
+.acord .accordion {
+  max-width: 85%;
+  margin: 2rem auto;
+  border: 1px solid; }
+  .acord .accordion .accordion-item {
+    background-color: whitesmoke; }
+    .acord .accordion .accordion-item h4 {
+      font-family: "Quicksand", sans-serif;
+      font-size: 1rem;
+      font-weight: 100;
+      font-style: normal; }
 
 /* !FIN ACTIVIDADES  */
 /* !START PIZARRA */

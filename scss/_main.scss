@@ -262,6 +262,7 @@ main{
                         display: block;
                         margin: 0 auto;
                         width: 85vw;
+                        object-fit: cover;
                     }
                     .carousel__text{
                         background-color: rgba(0, 0, 0, 0.5);
@@ -289,6 +290,19 @@ main{
             background-color: rgba(252, 5, 5, 0.3);
             height: 100%;
 
+        }
+    }
+}
+.acord{
+    .accordion{
+        max-width: 85%;
+        margin: 2rem auto;
+        border: 1px solid;
+        .accordion-item{
+            background-color: whitesmoke;
+            h4{
+                @include texto($font-family2, 1rem);
+            }
         }
     }
 }
