@@ -15,20 +15,18 @@ header{
                 ul{
                     li{
                         a{
-                            font-family: var(--font-family1);
+                            font-family: $font-family1;
                             font-weight: bold;
                             font-size: 1.5rem;
-                            color: black;
-                            transition: none;
+                            color: map-get($colores , color-black );
+                            transition: map-get($transitions, n );
                             i{
                                 vertical-align: auto;
                                 font-size: 2rem;
                                 margin: 0 0.5rem;
-
                             }
                             &:hover{
-                                color: var(--color1);
-
+                                color: map-get($colores , color1 );
                             }
 
                         }
@@ -36,14 +34,13 @@ header{
                             content: "";
                             width: 0.6rem;
                             height: 0rem;
-                            background-color: var(--color3);
+                            background-color: map-get($colores , color3 );
                             border-radius: 20px;
-                            transition: 400ms;
+                            transition: map-get($transitions , 300 );
                             position: absolute;
-
                         }
                         &:hover::before{
-                            height: 3.5rem;
+                            height: 3.2rem;
                             transform: rotate(180deg);
                         }
                     }

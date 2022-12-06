@@ -1,0 +1,470 @@
+/* !START INDEX */
+/* !Hero */
+main{
+    .hero{
+        padding-top: 7rem;
+        .container-fluid{
+            padding: 0;
+            background-image: url(../assets/images/roomie1.jpg);
+            background: url(../assets/images/roomie2.jpg);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 85vh;
+            overflow: hidden;
+            .name{
+                h1{
+                    font-family: $font-family-links;
+                    font-size: 7vw;
+                    color: map-get($colores , color3 ) ;
+                    text-shadow: 3px 3px 4px black;
+                    cursor: pointer;
+                }
+            }
+            .ask{
+                h2{
+                    font-family: $font-family2;
+                    color: map-get($colores , color-white );
+                    font-size: 2.5vw;
+                    text-shadow: 1px 1px 5px map-get($colores , color-black );
+                    padding-bottom: 2rem;
+                }
+            }
+            .formulario{
+                div{
+                    padding: 0;
+                    input , button{
+                        border-radius: 0px;
+                        padding: 0.7rem;
+
+                    }
+
+                }
+            }
+            .a-info{
+                height: 6rem;
+                width: 6rem;
+                position: absolute;
+                right: 3rem;
+                bottom: 5rem;
+                background-color: rgba(189, 189, 222, 0.5);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: map-get($colores , color-black );
+                animation: tembleque 2s ease infinite;
+            }
+
+        }
+    }
+    
+}
+
+/* !Informacion */
+.info{
+    padding-top: 5rem;
+    .informacion{
+        .principal{
+            .texto{
+                article{
+                    p{
+                        font-family: $font-family2;
+                        font-size: $size-texto-p;
+
+                    }
+                }
+            }
+            .a-go{
+                height: 6rem;
+                width: 6rem;
+                position: relative;
+                top: -9rem;
+                background-color: rgba(189, 189, 222, 0.5);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: map-get($colores , color-black );
+                animation: tembleque 2s ease infinite;
+
+            }
+        }
+    }
+}
+
+/* !Go */
+.go{
+    padding-top: 5rem;
+    .container{
+        div{
+            .pregunta{
+                font-family: $font-family2;
+                font-size: $size-subtittle;
+                color: map-get($colores , color3 );
+            }
+            .linkgo{
+                color: map-get($colores , color-link );
+                font-size: $size-links;
+                font-family: $font-family-links;
+                transition: map-get($transitions, 500 );
+                &:hover{
+                    color: map-get($colores , color-link-hover );
+                }
+            }
+        }
+        .a-hero{
+            height: 6rem;
+            width: 6rem;
+            position: absolute;
+            right: 2rem;
+            background-color: rgba(189, 189, 222, 0.5);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: map-get($colores , color-black );
+            animation: tembleque 2s ease infinite;
+            i{
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+}
+
+/* !FIN INDEX */
+
+
+
+/* !NOSOTROS START */
+.nosotros{
+    padding-top: 7rem;
+    overflow: hidden;
+    .container{
+        .nosotros__fila1{
+            .tittle__equipo{
+                font-family: $font-family3;
+                font-size: $size-tittle;
+                padding: 2rem 0;
+
+            }
+        }
+        .nosotros__fila2{
+            img{
+                width: 100%;
+                height: 90vh;
+                object-fit: contain;
+                filter: grayscale(1);
+                padding: 0;
+                transition: map-get($transitions, 300 ) all ease;
+                &:hover{
+                    filter: grayscale(0);
+                }
+
+            }
+        }
+        .nosotros__fila3{
+            p{
+                font-family: $font-family2;
+                font-size: $size-texto-p;
+                padding: 1rem 0;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+/* !Cards-individuales */
+.cards-individuales{
+    .container{
+        padding: 2rem 0;
+        .cards-individuales__fila1{
+            .card{
+                border: 3px solid map-get($colores , color3);
+                &:hover{
+                    box-shadow: 2px 2px 5px 2px map-get($colores , color-black );
+                    cursor: pointer;
+                }
+                .card-body{
+                    .nombre{
+                        font-family: $font-family3;
+                        font-size: $size-subtittle;
+                    }
+                    .presentacion{
+                        font-family: $font-family2;
+                        text-align: justify;
+                    }
+                    i{
+                        font-size: 3.5rem;
+                        position: absolute;
+                        top: -1rem;
+                        right: -1rem;
+                    }
+                    .icono-augusto{
+                        color: map-get($colores , color5);
+                        &:hover{
+                            animation: zoom 1s ease;
+                        }
+                    }
+                    .icono-nayeli{
+                        color: map-get($colores , color1);
+                        &:hover{
+                            animation: giro 1.6s ease alternate;
+    
+                        }
+                    }
+                    .icono-donato{
+                        color: map-get($colores , color2);
+                        &:hover{
+                            animation: tembleque 0.7s ease;
+    
+                        }
+                    }
+                    .icono-frida{
+                        color: map-get($colores , color3);
+                        &:hover{
+                            animation: opacidad 1s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Link */
+.links-page-move{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    a{
+        font-family: $font-family-links;
+        font-size:$size-links ;
+        color: map-get($colores , color-link);
+        transition: map-get($transitions, 500 );
+        text-align: center;
+        &:hover{
+            color: map-get($colores , color-link-hover);
+        }
+
+    }
+    
+}
+
+/* !FIN NOSOTROS */
+
+
+/* !START ACTIVIDADES */
+
+.modulos{
+    padding-top: 7rem;
+    .modulos__contenedor{
+        h1{
+            text-align: center;
+            font-family: $font-family3;
+            font-size: $size-tittle;
+            padding: 0.5rem;
+        }
+        h2{
+            text-align: center;
+            font-size: $size-texto-p;
+            margin: 0 10%;
+            padding-bottom: 2rem;
+
+        }
+        .carousel{
+            .carousel-inner{
+                .carousel-item{
+                    img{
+                        display: block;
+                        margin: 0 auto;
+                        width: 85vw;
+                    }
+                    .carousel__text{
+                        background-color: rgba(0, 0, 0, 0.5);
+                        margin: 0 15%;
+                        border-radius: 1rem;
+                        h3{
+                            font-family: $font-family2 ;
+                            font-size: 2vw;
+                        }
+                        p{
+                            font-family: $font-family2 ;
+                            font-size: 1.1vw;
+                        }
+                        button{
+                            text-decoration: none;
+                            font-size: 1.5vw;
+                            font-family: $font-family2 ;
+                            font-weight: bold;
+                            background-color: map-get($colores , color3);
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .carousel-control-next , .carousel-control-prev{
+        span{
+            background-color: rgba(252, 5, 5, 0.3);
+            height: 100%;
+
+        }
+    }
+}
+
+/* !FIN ACTIVIDADES  */
+
+
+
+/* !START PIZARRA */
+
+.pizarra {
+    padding-top: 7rem;
+    .tittle{
+        text-align: center;
+        font-size: $size-tittle;
+        font-family: $font-family3;
+    }
+    .container-fluid{
+        background-image: url(../assets/images/texturacorcho8.jpg);
+        background-size: cover;
+        box-shadow: inset 0px 0px 20px 1px map-get($colores , color-black );
+        margin: 1rem auto 15rem auto;
+        width: 95vw;
+        height: 100vh;
+        border-style: inset;
+        border-width: 2rem;
+        border-image-source: url(../assets/images/bordertextura3.jpg);
+        border-image-slice: 60 30;
+        position: relative;
+        font-size: 1rem;
+        .posit{
+            height: 30vh;
+            width: 15vw;
+            margin-top: 4rem;
+            border: 2px solid;
+
+        }
+        .pizarra__fila1{
+            display: flex;
+            justify-content: space-around;
+            .calendar{
+                iframe{
+                    height: 50vh;
+                    width: 30vw;
+                    margin-top: 3rem;
+                }
+            }
+            .posit_1{
+                background-color: #cfc;
+                transform: rotate(-5deg);
+                &::placeholder{
+                    text-align: center;
+                    color: map-get($colores , color-black );
+                    font-size: 1.5vw;
+                    font-family:$font-family-links;
+                }
+            }
+            .posit_2{
+                background-color: #fcf;
+                transform: rotate(5deg);
+                &::placeholder{
+                    text-align: center;
+                    color: map-get($colores , color-black );
+                    font-size: 1.5vw;
+                    font-family:$font-family-links;
+                }
+            }
+        }
+        .pizarra__fila2{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            .papel{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                .papel__links{
+                    background: url(../assets/images/papel.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    list-style: none;
+                    padding: 4rem;
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    bottom: 2rem;
+                    li{
+                        font-size: 1.5vw;
+                        a{
+                            color: map-get($colores , color1);
+                            text-decoration: none;
+                            font-family: $font-family1;
+                            &:hover{
+                                color: map-get($colores , color3);
+                            }
+                        }
+                    }
+                }
+            }
+            .posit__3{
+                background-color: #fcc;
+                position: relative;
+                bottom: 10rem;
+                right: 7rem;
+                &::placeholder{
+                    text-align: center;
+                    color: map-get($colores , color-black );
+                    font-size: 1.5vw;
+                    font-family:$font-family-links;
+                }
+            }
+        }
+    }
+}
+
+/* FIN PIZARRA */
+
+
+
+/* !START CONTACTO */
+.formularios {
+    h1{
+        color: map-get($colores , color-black );
+        font-size: $size-tittle;
+        font-family: $font-family3;
+        flex-basis: 100%;
+        text-align: center;
+    }
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 7rem;
+    .container-contacto{
+        padding: 3rem;
+        margin-top: 4rem;
+        background-color: map-get($colores , color3);
+        max-width: 45%;
+        border-radius: 20px;
+        padding-top: 7rem;
+        form{
+            .botones{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 2rem;
+                width: 50%;
+                margin: 2rem auto;
+
+            }
+        }
+    }
+}
+/* !FIN CONTACTO */

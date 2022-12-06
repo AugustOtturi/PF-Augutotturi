@@ -1,25 +1,45 @@
-
-/* !FUENTES TEXTO */
-$font-family1: 'Oswald', sans-serif;
-$font-family2: 'Quicksand', sans-serif;
-$font-family3: 'Reenie Beanie', cursive;
-$font-family-links: 'Pacifico', sans-serif;
-
-/* !COLORES */
-$color1:#3022aa;
-$color2:#7678ED;
-$color3:#F7B801;
-$color4:#F18701;
-$color5:#F35B04;
-$color-link:$color1;
-$color-link-hover:$color2;
-$color-black: #000;
-$color-white: #fff;
+/* !VARIABLES */
 
 
-/* !TAMAÑOS FUENTE */
-$size-tittle:5rem;
-$size-subtittle:3rem;
-$size-texto-p:1.3rem;
-$size-links:2.7rem;
+/* FUENTES TEXTO */
+$font-family1       : 'Oswald', sans-serif;
+$font-family2       : 'Quicksand', sans-serif;
+$font-family3       : 'Reenie Beanie', cursive;
+$font-family-links  : 'Pacifico', sans-serif;
 
+
+
+
+/* TAMAÑOS FUENTE */
+$size-tittle    :3rem;
+$size-subtittle :2.3rem;
+$size-texto-p   :1.3rem;
+$size-links     :2.7rem;
+
+
+
+/* !MAPS */
+
+/* TRANSICIONES */
+
+$transitions:(
+    n       : none,
+    300     : 300ms,
+    400     : 400ms,
+    500     : 500ms,
+    1000    : 1s,
+);
+
+/* COLORES */
+$colores:(
+    color1           :#3022aa,
+    color2           :#7678ED,
+    color3           :#F7B801,
+    color4           :#F18701,
+    color5           :#F35B04,
+    color-link       :#2b16ed,
+    color-link-hover :#4b4eec,
+    color-black      :rgb(21, 19, 19),
+    color-white      : rgb(252, 240, 240),
+
+);

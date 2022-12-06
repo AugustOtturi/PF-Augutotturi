@@ -1,7 +1,7 @@
 /* !FOOTER START */
 footer{
     .container-fluid{
-        background-color: var(--color4);
+        background-color: map-get($colores , color3);
         margin-top: 4rem;
         overflow: hidden;
         .icons-links{
@@ -12,7 +12,7 @@ footer{
                     margin: 0 1rem;
                     a{
                         i{
-                            color: white;
+                            color: map-get($colores , color-white);
                             text-shadow: 5px 5px 2px rgb(146, 143, 143);
                             &:hover{
                                 scale: 1.3;
@@ -21,6 +21,12 @@ footer{
                     }
                 }
             }
+        }
+        .derechos{
+            background-color: map-get($colores , color-black);
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
