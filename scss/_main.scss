@@ -2,20 +2,15 @@
 /* !Hero */
 main{
     .hero{
-        padding-top: 7rem;
+        padding-top: $pd-7;
         .container-fluid{
-            padding: 0;
-            background-image: url(../assets/images/roomie1.jpg);
-            background: url(../assets/images/roomie2.jpg);
-            background-position: top;
-            background-repeat: no-repeat;
-            background-size: cover;
+            padding: $pd-0;
+            @include background-big(url(../assets/images/roomie2.jpg), top, no-repeat, cover);
             height: 85vh;
             overflow: hidden;
             .name{
                 h1{
-                    font-family: $font-family-links;
-                    font-size: 7vw;
+                    @include texto($font-family-links, 7vw);
                     color: map-get($colores , color3 ) ;
                     text-shadow: 3px 3px 4px black;
                     cursor: pointer;
@@ -23,19 +18,18 @@ main{
             }
             .ask{
                 h2{
-                    font-family: $font-family2;
+                    @include texto($font-family2, 2.5vw, $style:italic);
                     color: map-get($colores , color-white );
-                    font-size: 2.5vw;
                     text-shadow: 1px 1px 5px map-get($colores , color-black );
-                    padding-bottom: 2rem;
+                    padding-bottom: $pd-2;
                 }
             }
             .formulario{
                 div{
-                    padding: 0;
+                    padding: $pd-0;
                     input , button{
                         border-radius: 0px;
-                        padding: 0.7rem;
+                        padding: $pd-0 + 0.7;
 
                     }
 
@@ -49,9 +43,7 @@ main{
                 bottom: 5rem;
                 background-color: rgba(189, 189, 222, 0.5);
                 border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex-justify-align(center , center);
                 text-decoration: none;
                 color: map-get($colores , color-black );
                 animation: tembleque 2s ease infinite;
@@ -64,14 +56,13 @@ main{
 
 /* !Informacion */
 .info{
-    padding-top: 5rem;
+    padding-top: $pd-5;
     .informacion{
         .principal{
             .texto{
                 article{
                     p{
-                        font-family: $font-family2;
-                        font-size: $size-texto-p;
+                        @include texto($font-family2, map-get($tamaños-texto, size-texto-p));
 
                     }
                 }
@@ -83,9 +74,7 @@ main{
                 top: -9rem;
                 background-color: rgba(189, 189, 222, 0.5);
                 border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex-justify-align(center, center);
                 text-decoration: none;
                 color: map-get($colores , color-black );
                 animation: tembleque 2s ease infinite;
@@ -97,18 +86,16 @@ main{
 
 /* !Go */
 .go{
-    padding-top: 5rem;
+    padding-top: $pd-5;
     .container{
         div{
             .pregunta{
-                font-family: $font-family2;
-                font-size: $size-subtittle;
+                @include texto($font-family2, map-get($tamaños-texto, size-subtittle));
                 color: map-get($colores , color3 );
             }
             .linkgo{
                 color: map-get($colores , color-link );
-                font-size: $size-links;
-                font-family: $font-family-links;
+                @include texto($font-family-links, map-get($tamaños-texto, size-links), $style:italic);
                 transition: map-get($transitions, 500 );
                 &:hover{
                     color: map-get($colores , color-link-hover );
@@ -122,9 +109,7 @@ main{
             right: 2rem;
             background-color: rgba(189, 189, 222, 0.5);
             border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-justify-align(center, center);
             text-decoration: none;
             color: map-get($colores , color-black );
             animation: tembleque 2s ease infinite;
@@ -142,14 +127,13 @@ main{
 
 /* !NOSOTROS START */
 .nosotros{
-    padding-top: 7rem;
+    padding-top: $pd-7;
     overflow: hidden;
     .container{
         .nosotros__fila1{
             .tittle__equipo{
-                font-family: $font-family3;
-                font-size: $size-tittle;
-                padding: 2rem 0;
+                @include texto($font-family3, map-get($tamaños-texto, size-tittle));
+                padding: $pd-2 $pd-0;
 
             }
         }
@@ -159,7 +143,7 @@ main{
                 height: 90vh;
                 object-fit: contain;
                 filter: grayscale(1);
-                padding: 0;
+                padding: $pd-0;
                 transition: map-get($transitions, 300 ) all ease;
                 &:hover{
                     filter: grayscale(0);
@@ -169,8 +153,7 @@ main{
         }
         .nosotros__fila3{
             p{
-                font-family: $font-family2;
-                font-size: $size-texto-p;
+                @include texto($font-family2, map-get($tamaños-texto, size-texto-p));
                 padding: 1rem 0;
                 text-align: justify;
             }
@@ -181,7 +164,7 @@ main{
 /* !Cards-individuales */
 .cards-individuales{
     .container{
-        padding: 2rem 0;
+        padding: $pd-2 $pd-0;
         .cards-individuales__fila1{
             .card{
                 border: 3px solid map-get($colores , color3);
@@ -191,15 +174,14 @@ main{
                 }
                 .card-body{
                     .nombre{
-                        font-family: $font-family3;
-                        font-size: $size-subtittle;
+                        @include texto($font-family3, map-get($tamaños-texto, size-subtittle));
                     }
                     .presentacion{
                         font-family: $font-family2;
                         text-align: justify;
                     }
                     i{
-                        font-size: 3.5rem;
+                        font-size: map-get($tamaños-texto, size-tittle);
                         position: absolute;
                         top: -1rem;
                         right: -1rem;
@@ -238,12 +220,10 @@ main{
 
 /* Link */
 .links-page-move{
-    display: flex;
-    justify-content: center;
+    @include flex-justify-align(center);
     padding: 1rem 0;
     a{
-        font-family: $font-family-links;
-        font-size:$size-links ;
+        @include texto($font-family-links, map-get($tamaños-texto, size-links));
         color: map-get($colores , color-link);
         transition: map-get($transitions, 500 );
         text-align: center;
@@ -261,19 +241,18 @@ main{
 /* !START ACTIVIDADES */
 
 .modulos{
-    padding-top: 7rem;
+    padding-top: $pd-7;
     .modulos__contenedor{
         h1{
             text-align: center;
-            font-family: $font-family3;
-            font-size: $size-tittle;
-            padding: 0.5rem;
+            @include texto($font-family3, map-get($tamaños-texto, size-tittle));
+            padding:$pd-0 + 0.5;
         }
         h2{
             text-align: center;
-            font-size: $size-texto-p;
+            font-size: map-get($tamaños-texto, size-texto-p);
             margin: 0 10%;
-            padding-bottom: 2rem;
+            padding-bottom: $pd-2;
 
         }
         .carousel{
@@ -289,18 +268,14 @@ main{
                         margin: 0 15%;
                         border-radius: 1rem;
                         h3{
-                            font-family: $font-family2 ;
-                            font-size: 2vw;
+                            @include texto($font-family2, 2vw, $style:italic);
                         }
                         p{
-                            font-family: $font-family2 ;
-                            font-size: 1.1vw;
+                            @include texto($font-family2, 1.1vw);
                         }
                         button{
                             text-decoration: none;
-                            font-size: 1.5vw;
-                            font-family: $font-family2 ;
-                            font-weight: bold;
+                            @include texto($font-family2, 1.5vw,bold);
                             background-color: map-get($colores , color3);
                             border: none;
                         }
@@ -325,15 +300,13 @@ main{
 /* !START PIZARRA */
 
 .pizarra {
-    padding-top: 7rem;
+    padding-top: $pd-7;
     .tittle{
         text-align: center;
-        font-size: $size-tittle;
-        font-family: $font-family3;
+        @include texto($font-family3,map-get($tamaños-texto, size-tittle));
     }
     .container-fluid{
-        background-image: url(../assets/images/texturacorcho8.jpg);
-        background-size: cover;
+        @include background-big(url(../assets/images/texturacorcho8.jpg), $size:cover);
         box-shadow: inset 0px 0px 20px 1px map-get($colores , color-black );
         margin: 1rem auto 15rem auto;
         width: 95vw;
@@ -343,7 +316,7 @@ main{
         border-image-source: url(../assets/images/bordertextura3.jpg);
         border-image-slice: 60 30;
         position: relative;
-        font-size: 1rem;
+        font-size: map-get($tamaños-texto, size-texto-p);
         .posit{
             height: 30vh;
             width: 15vw;
@@ -352,8 +325,7 @@ main{
 
         }
         .pizarra__fila1{
-            display: flex;
-            justify-content: space-around;
+            @include flex-justify-align(space-around);
             .calendar{
                 iframe{
                     height: 50vh;
@@ -367,8 +339,7 @@ main{
                 &::placeholder{
                     text-align: center;
                     color: map-get($colores , color-black );
-                    font-size: 1.5vw;
-                    font-family:$font-family-links;
+                    @include texto($font-family-links, 1.5vw);
                 }
             }
             .posit_2{
@@ -377,28 +348,19 @@ main{
                 &::placeholder{
                     text-align: center;
                     color: map-get($colores , color-black );
-                    font-size: 1.5vw;
-                    font-family:$font-family-links;
+                    @include texto($font-family-links, 1.5vw);
                 }
             }
         }
         .pizarra__fila2{
-            display: flex;
-            justify-content:center;
-            align-items: center;
+            @include flex-justify-align(center, center);
             .papel{
-                display: flex;
-                justify-content: center;
-                align-items: flex-start;
+                @include flex-justify-align(center, flex-start);
                 .papel__links{
-                    background: url(../assets/images/papel.png);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: center;
+                    @include background-big(url(../assets/images/papel.png), center, no-repeat, cover);
                     list-style: none;
-                    padding: 4rem;
-                    display: flex;
-                    flex-direction: column;
+                    padding: $pd-5;
+                    @include flex-big($direction:column, $wrap:wrap);
                     position: relative;
                     bottom: 2rem;
                     li{
@@ -422,8 +384,7 @@ main{
                 &::placeholder{
                     text-align: center;
                     color: map-get($colores , color-black );
-                    font-size: 1.5vw;
-                    font-family:$font-family-links;
+                    @include texto($font-family-links, 1.5vw);
                 }
             }
         }
@@ -438,27 +399,22 @@ main{
 .formularios {
     h1{
         color: map-get($colores , color-black );
-        font-size: $size-tittle;
-        font-family: $font-family3;
+        @include texto($font-family3, map-get($tamaños-texto, size-tittle));
         flex-basis: 100%;
         text-align: center;
     }
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding-top: 7rem;
+    @include flex-big(space-around, $wrap:wrap);
+    padding-top: $pd-7;
     .container-contacto{
-        padding: 3rem;
+        padding: $pd-5 - 2;
         margin-top: 4rem;
         background-color: map-get($colores , color3);
         max-width: 45%;
         border-radius: 20px;
-        padding-top: 7rem;
+        padding-top: $pd-7;
         form{
             .botones{
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
+                @include flex-justify-align(space-around, center);
                 margin-top: 2rem;
                 width: 50%;
                 margin: 2rem auto;

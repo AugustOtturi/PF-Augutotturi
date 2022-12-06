@@ -5,10 +5,10 @@ footer{
         margin-top: 4rem;
         overflow: hidden;
         .icons-links{
-            padding: 1rem 0;
+            padding: ($pd-0 + 1) 0;
             ul{
                 li{
-                    font-size: 2.7rem;
+                    font-size: map-get($tamaños-texto,size-links );
                     margin: 0 1rem;
                     a{
                         i{
@@ -24,9 +24,8 @@ footer{
         }
         .derechos{
             background-color: map-get($colores , color-black);
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-justify-align(center, center);
+
         }
     }
 }

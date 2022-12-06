@@ -1,0 +1,31 @@
+
+
+
+@mixin flex-justify-align($justify:normal, $align:stretch) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    
+}
+
+@mixin flex-big($justify:normal,$align:stretch,$direction:row,$wrap:nowrap) {
+    display: flex;
+    justify-content:$justify ;
+    align-items:$align ;
+    flex-direction:$direction ;
+    flex-wrap:$wrap ;
+}
+
+@mixin background-big($image:none,$position:0% 0%,$repeat:repeat,$size:auto auto){
+    background-image:$image ;
+    background-position:$position ;
+    background-repeat:$repeat ;
+    background-size:$size ;
+}
+
+@mixin texto($familia, $size, $weight:100, $style:normal){
+    font-family: $familia;
+    font-size:$size ;
+    font-weight: $weight;
+    font-style: $style;
+}

@@ -1,6 +1,4 @@
 /* !VARIABLES */
-
-
 /* FUENTES TEXTO */
 $font-family1       : 'Oswald', sans-serif;
 $font-family2       : 'Quicksand', sans-serif;
@@ -8,20 +6,20 @@ $font-family3       : 'Reenie Beanie', cursive;
 $font-family-links  : 'Pacifico', sans-serif;
 
 
+/* PADDINGS */
+$pd-7  : 7rem;
+$pd-5  : 5rem;
+$pd-2  : 2rem;
+$pd-0  : 0rem;
 
 
-/* TAMAÑOS FUENTE */
-$size-tittle    :3rem;
-$size-subtittle :2.3rem;
-$size-texto-p   :1.3rem;
-$size-links     :2.7rem;
+
+
 
 
 
 /* !MAPS */
-
 /* TRANSICIONES */
-
 $transitions:(
     n       : none,
     300     : 300ms,
@@ -42,4 +40,12 @@ $colores:(
     color-black      :rgb(21, 19, 19),
     color-white      : rgb(252, 240, 240),
 
+);
+
+/* TAMAÑOS FUENTE */
+$tamaños-texto:(
+size-tittle    :4rem,
+size-subtittle :2.3rem,
+size-texto-p   :1.3rem,
+size-links     :2.7rem,
 );

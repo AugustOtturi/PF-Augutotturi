@@ -11,10 +11,11 @@ html {
 
 /* !VARIABLES */
 /* FUENTES TEXTO */
-/* TAMAÑOS FUENTE */
+/* PADDINGS */
 /* !MAPS */
 /* TRANSICIONES */
 /* COLORES */
+/* TAMAÑOS FUENTE */
 /* !ANIMACIONES */
 /* Aplicadas en INDEX y en los iconos en NOSOTROS */
 @keyframes opacidad {
@@ -72,8 +73,9 @@ header nav {
     margin-left: 3rem; }
   header nav .container-fluid .navbar-collapse ul li a {
     font-family: "Oswald", sans-serif;
-    font-weight: bold;
     font-size: 1.5rem;
+    font-weight: bold;
+    font-style: normal;
     color: #151313;
     transition: none; }
     header nav .container-fluid .navbar-collapse ul li a i {
@@ -99,9 +101,8 @@ header nav {
 main .hero {
   padding-top: 7rem; }
   main .hero .container-fluid {
-    padding: 0;
-    background-image: url(../assets/images/roomie1.jpg);
-    background: url(../assets/images/roomie2.jpg);
+    padding: 0rem;
+    background-image: url(../assets/images/roomie2.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -110,17 +111,21 @@ main .hero {
     main .hero .container-fluid .name h1 {
       font-family: "Pacifico", sans-serif;
       font-size: 7vw;
+      font-weight: 100;
+      font-style: normal;
       color: #F7B801;
       text-shadow: 3px 3px 4px black;
       cursor: pointer; }
     main .hero .container-fluid .ask h2 {
       font-family: "Quicksand", sans-serif;
-      color: #fcf0f0;
       font-size: 2.5vw;
+      font-weight: 100;
+      font-style: italic;
+      color: #fcf0f0;
       text-shadow: 1px 1px 5px #151313;
       padding-bottom: 2rem; }
     main .hero .container-fluid .formulario div {
-      padding: 0; }
+      padding: 0rem; }
       main .hero .container-fluid .formulario div input, main .hero .container-fluid .formulario div button {
         border-radius: 0px;
         padding: 0.7rem; }
@@ -144,7 +149,9 @@ main .hero {
   padding-top: 5rem; }
   .info .informacion .principal .texto article p {
     font-family: "Quicksand", sans-serif;
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    font-weight: 100;
+    font-style: normal; }
   .info .informacion .principal .a-go {
     height: 6rem;
     width: 6rem;
@@ -165,11 +172,15 @@ main .hero {
   .go .container div .pregunta {
     font-family: "Quicksand", sans-serif;
     font-size: 2.3rem;
+    font-weight: 100;
+    font-style: normal;
     color: #F7B801; }
   .go .container div .linkgo {
     color: #2b16ed;
-    font-size: 2.7rem;
     font-family: "Pacifico", sans-serif;
+    font-size: 2.7rem;
+    font-weight: 100;
+    font-style: italic;
     transition: 500ms; }
     .go .container div .linkgo:hover {
       color: #4b4eec; }
@@ -196,26 +207,30 @@ main .hero {
   overflow: hidden; }
   .nosotros .container .nosotros__fila1 .tittle__equipo {
     font-family: "Reenie Beanie", cursive;
-    font-size: 3rem;
-    padding: 2rem 0; }
+    font-size: 4rem;
+    font-weight: 100;
+    font-style: normal;
+    padding: 2rem 0rem; }
   .nosotros .container .nosotros__fila2 img {
     width: 100%;
     height: 90vh;
     object-fit: contain;
     filter: grayscale(1);
-    padding: 0;
+    padding: 0rem;
     transition: 300ms all ease; }
     .nosotros .container .nosotros__fila2 img:hover {
       filter: grayscale(0); }
   .nosotros .container .nosotros__fila3 p {
     font-family: "Quicksand", sans-serif;
     font-size: 1.3rem;
+    font-weight: 100;
+    font-style: normal;
     padding: 1rem 0;
     text-align: justify; }
 
 /* !Cards-individuales */
 .cards-individuales .container {
-  padding: 2rem 0; }
+  padding: 2rem 0rem; }
   .cards-individuales .container .cards-individuales__fila1 .card {
     border: 3px solid #F7B801; }
     .cards-individuales .container .cards-individuales__fila1 .card:hover {
@@ -223,12 +238,14 @@ main .hero {
       cursor: pointer; }
     .cards-individuales .container .cards-individuales__fila1 .card .card-body .nombre {
       font-family: "Reenie Beanie", cursive;
-      font-size: 2.3rem; }
+      font-size: 2.3rem;
+      font-weight: 100;
+      font-style: normal; }
     .cards-individuales .container .cards-individuales__fila1 .card .card-body .presentacion {
       font-family: "Quicksand", sans-serif;
       text-align: justify; }
     .cards-individuales .container .cards-individuales__fila1 .card .card-body i {
-      font-size: 3.5rem;
+      font-size: 4rem;
       position: absolute;
       top: -1rem;
       right: -1rem; }
@@ -253,10 +270,13 @@ main .hero {
 .links-page-move {
   display: flex;
   justify-content: center;
+  align-items: stretch;
   padding: 1rem 0; }
   .links-page-move a {
     font-family: "Pacifico", sans-serif;
     font-size: 2.7rem;
+    font-weight: 100;
+    font-style: normal;
     color: #2b16ed;
     transition: 500ms;
     text-align: center; }
@@ -270,7 +290,9 @@ main .hero {
   .modulos .modulos__contenedor h1 {
     text-align: center;
     font-family: "Reenie Beanie", cursive;
-    font-size: 3rem;
+    font-size: 4rem;
+    font-weight: 100;
+    font-style: normal;
     padding: 0.5rem; }
   .modulos .modulos__contenedor h2 {
     text-align: center;
@@ -287,15 +309,20 @@ main .hero {
     border-radius: 1rem; }
     .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item .carousel__text h3 {
       font-family: "Quicksand", sans-serif;
-      font-size: 2vw; }
+      font-size: 2vw;
+      font-weight: 100;
+      font-style: italic; }
     .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item .carousel__text p {
       font-family: "Quicksand", sans-serif;
-      font-size: 1.1vw; }
+      font-size: 1.1vw;
+      font-weight: 100;
+      font-style: normal; }
     .modulos .modulos__contenedor .carousel .carousel-inner .carousel-item .carousel__text button {
       text-decoration: none;
-      font-size: 1.5vw;
       font-family: "Quicksand", sans-serif;
+      font-size: 1.5vw;
       font-weight: bold;
+      font-style: normal;
       background-color: #F7B801;
       border: none; }
   .modulos .carousel-control-next span, .modulos .carousel-control-prev span {
@@ -308,10 +335,14 @@ main .hero {
   padding-top: 7rem; }
   .pizarra .tittle {
     text-align: center;
-    font-size: 3rem;
-    font-family: "Reenie Beanie", cursive; }
+    font-family: "Reenie Beanie", cursive;
+    font-size: 4rem;
+    font-weight: 100;
+    font-style: normal; }
   .pizarra .container-fluid {
     background-image: url(../assets/images/texturacorcho8.jpg);
+    background-position: 0% 0%;
+    background-repeat: repeat;
     background-size: cover;
     box-shadow: inset 0px 0px 20px 1px #151313;
     margin: 1rem auto 15rem auto;
@@ -322,7 +353,7 @@ main .hero {
     border-image-source: url(../assets/images/bordertextura3.jpg);
     border-image-slice: 60 30;
     position: relative;
-    font-size: 1rem; }
+    font-size: 1.3rem; }
     .pizarra .container-fluid .posit {
       height: 30vh;
       width: 15vw;
@@ -330,7 +361,8 @@ main .hero {
       border: 2px solid; }
     .pizarra .container-fluid .pizarra__fila1 {
       display: flex;
-      justify-content: space-around; }
+      justify-content: space-around;
+      align-items: stretch; }
       .pizarra .container-fluid .pizarra__fila1 .calendar iframe {
         height: 50vh;
         width: 30vw;
@@ -341,16 +373,20 @@ main .hero {
         .pizarra .container-fluid .pizarra__fila1 .posit_1::placeholder {
           text-align: center;
           color: #151313;
+          font-family: "Pacifico", sans-serif;
           font-size: 1.5vw;
-          font-family: "Pacifico", sans-serif; }
+          font-weight: 100;
+          font-style: normal; }
       .pizarra .container-fluid .pizarra__fila1 .posit_2 {
         background-color: #fcf;
         transform: rotate(5deg); }
         .pizarra .container-fluid .pizarra__fila1 .posit_2::placeholder {
           text-align: center;
           color: #151313;
+          font-family: "Pacifico", sans-serif;
           font-size: 1.5vw;
-          font-family: "Pacifico", sans-serif; }
+          font-weight: 100;
+          font-style: normal; }
     .pizarra .container-fluid .pizarra__fila2 {
       display: flex;
       justify-content: center;
@@ -360,14 +396,17 @@ main .hero {
         justify-content: center;
         align-items: flex-start; }
         .pizarra .container-fluid .pizarra__fila2 .papel .papel__links {
-          background: url(../assets/images/papel.png);
-          background-size: cover;
-          background-repeat: no-repeat;
+          background-image: url(../assets/images/papel.png);
           background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
           list-style: none;
-          padding: 4rem;
+          padding: 5rem;
           display: flex;
+          justify-content: normal;
+          align-items: stretch;
           flex-direction: column;
+          flex-wrap: wrap;
           position: relative;
           bottom: 2rem; }
           .pizarra .container-fluid .pizarra__fila2 .papel .papel__links li {
@@ -386,20 +425,26 @@ main .hero {
         .pizarra .container-fluid .pizarra__fila2 .posit__3::placeholder {
           text-align: center;
           color: #151313;
+          font-family: "Pacifico", sans-serif;
           font-size: 1.5vw;
-          font-family: "Pacifico", sans-serif; }
+          font-weight: 100;
+          font-style: normal; }
 
 /* FIN PIZARRA */
 /* !START CONTACTO */
 .formularios {
   display: flex;
   justify-content: space-around;
+  align-items: stretch;
+  flex-direction: row;
   flex-wrap: wrap;
   padding-top: 7rem; }
   .formularios h1 {
     color: #151313;
-    font-size: 3rem;
     font-family: "Reenie Beanie", cursive;
+    font-size: 4rem;
+    font-weight: 100;
+    font-style: normal;
     flex-basis: 100%;
     text-align: center; }
   .formularios .container-contacto {
@@ -445,9 +490,10 @@ footer .container-fluid {
     height: 40vw; }
   .cards-individuales .container .cards-individuales__fila1 {
     display: flex;
-    align-items: center;
     justify-content: space-around;
-    flex-direction: column; }
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap; }
     .cards-individuales .container .cards-individuales__fila1 .col {
       margin: 2rem 0;
       width: 80%; } }
@@ -469,6 +515,7 @@ footer .container-fluid {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: nowrap;
     overflow: hidden; }
     main .info .informacion .principal .col-animacion, main .info .informacion .principal .col-texto {
       width: 100%;
@@ -514,7 +561,7 @@ footer .container-fluid {
           .pizarra .container-fluid .pizarra__fila2 .papel .papel__links {
             width: 100%;
             height: 50vh;
-            padding: 0;
+            padding: 0rem;
             justify-content: center;
             align-items: center; }
             .pizarra .container-fluid .pizarra__fila2 .papel .papel__links li {
