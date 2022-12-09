@@ -490,6 +490,33 @@ main .hero {
       margin: 2rem auto; }
 
 /* !FIN CONTACTO */
+/* !404 ERROR */
+main .error {
+  height: 100%; }
+  main .error .row .col-12 {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 7rem;
+    background-color: #F7B801; }
+    main .error .row .col-12 h1 {
+      text-align: center;
+      font-family: "Pacifico", sans-serif;
+      font-size: 6rem;
+      font-weight: 100;
+      font-style: normal; }
+    main .error .row .col-12 h2 {
+      text-align: center;
+      font-family: "Quicksand", sans-serif;
+      font-size: 3.3rem;
+      font-weight: 100;
+      font-style: normal; }
+    main .error .row .col-12 .animacionn {
+      scale: 1.1;
+      overflow-x: hidden; }
+
 /* !FOOTER START */
 footer .container-fluid {
   background-color: #F7B801;

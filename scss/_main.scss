@@ -450,3 +450,36 @@ main{
     }
 }
 /* !FIN CONTACTO */
+
+
+/* !404 ERROR */
+
+main{
+    .error{
+       
+        height: 100%;
+        .row{
+            .col-12{
+                height: 100vh;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 7rem;
+                background-color: map-get($colores , color3);
+                h1{
+                    text-align: center;
+                    @include texto($font-family-links, map-get($tamaños-texto, size-tittle)+2);
+                }
+                h2{
+                    text-align: center;
+                    @include texto($font-family2, map-get($tamaños-texto, size-subtittle)+1);
+                }
+                .animacionn{
+                    scale: 1.1;
+                    overflow-x: hidden;
+                }
+            }
+        }
+    }
+}
