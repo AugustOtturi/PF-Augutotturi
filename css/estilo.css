@@ -492,6 +492,7 @@ main .hero {
 /* !FIN CONTACTO */
 /* !404 ERROR */
 main .error {
+  overflow: hidden;
   height: 100%; }
   main .error .row .col-12 {
     height: 100vh;

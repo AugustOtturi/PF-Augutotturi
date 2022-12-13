@@ -1,41 +1,40 @@
 /* !START INDEX */
 /* !Hero */
-main{
-    .hero{
+main {
+    .hero {
         padding-top: $pd-7;
-        .container-fluid{
+        .container-fluid {
             padding: $pd-0;
             @include background-big(url(../assets/images/roomie2.jpg), top, no-repeat, cover);
             height: 85vh;
             overflow: hidden;
-            .name{
-                h1{
+            .name {
+                h1 {
                     @include texto($font-family-links, 7vw);
-                    color: map-get($colores , color3 ) ;
+                    color: map-get($colores, color3);
                     text-shadow: 3px 3px 4px black;
                     cursor: pointer;
                 }
             }
-            .ask{
-                h2{
-                    @include texto($font-family2, 2.5vw, $style:italic);
-                    color: map-get($colores , color-white );
-                    text-shadow: 1px 1px 5px map-get($colores , color-black );
+            .ask {
+                h2 {
+                    @include texto($font-family2, 2.5vw, $style: italic);
+                    color: map-get($colores, color-white);
+                    text-shadow: 1px 1px 5px map-get($colores, color-black);
                     padding-bottom: $pd-2;
                 }
             }
-            .formulario{
-                div{
+            .formulario {
+                div {
                     padding: $pd-0;
-                    input , button{
+                    input,
+                    button {
                         border-radius: 0px;
                         padding: $pd-0 + 0.7;
-
                     }
-
                 }
             }
-            .a-info{
+            .a-info {
                 height: 6rem;
                 width: 6rem;
                 position: absolute;
@@ -43,31 +42,28 @@ main{
                 bottom: 5rem;
                 background-color: rgba(189, 189, 222, 0.5);
                 border-radius: 50%;
-                @include flex-justify-align(center , center);
+                @include flex-justify-align(center, center);
                 text-decoration: none;
-                color: map-get($colores , color-black );
+                color: map-get($colores, color-black);
                 animation: tembleque 2s ease infinite;
             }
-
         }
     }
-    
 }
 
 /* !Informacion */
-.info{
+.info {
     padding-top: $pd-5;
-    .informacion{
-        .principal{
-            .texto{
-                article{
-                    p{
+    .informacion {
+        .principal {
+            .texto {
+                article {
+                    p {
                         @include texto($font-family2, map-get($tamaños-texto, size-texto-p));
-
                     }
                 }
             }
-            .a-go{
+            .a-go {
                 height: 6rem;
                 width: 6rem;
                 position: relative;
@@ -76,33 +72,32 @@ main{
                 border-radius: 50%;
                 @include flex-justify-align(center, center);
                 text-decoration: none;
-                color: map-get($colores , color-black );
+                color: map-get($colores, color-black);
                 animation: tembleque 2s ease infinite;
-
             }
         }
     }
 }
 
 /* !Go */
-.go{
+.go {
     padding-top: $pd-5;
-    .container{
-        div{
-            .pregunta{
+    .container {
+        div {
+            .pregunta {
                 @include texto($font-family2, map-get($tamaños-texto, size-subtittle));
-                color: map-get($colores , color3 );
+                color: map-get($colores, color3);
             }
-            .linkgo{
-                color: map-get($colores , color-link );
-                @include texto($font-family-links, map-get($tamaños-texto, size-links), $style:italic);
-                transition: map-get($transitions, 500 );
-                &:hover{
-                    color: map-get($colores , color-link-hover );
+            .linkgo {
+                color: map-get($colores, color-link);
+                @include texto($font-family-links, map-get($tamaños-texto, size-links), $style: italic);
+                transition: map-get($transitions, 500);
+                &:hover {
+                    color: map-get($colores, color-link-hover);
                 }
             }
         }
-        .a-hero{
+        .a-hero {
             height: 6rem;
             width: 6rem;
             position: absolute;
@@ -111,48 +106,43 @@ main{
             border-radius: 50%;
             @include flex-justify-align(center, center);
             text-decoration: none;
-            color: map-get($colores , color-black );
+            color: map-get($colores, color-black);
             animation: tembleque 2s ease infinite;
-            i{
+            i {
                 transform: rotate(180deg);
             }
         }
     }
-
 }
 
 /* !FIN INDEX */
 
-
-
 /* !NOSOTROS START */
-.nosotros{
+.nosotros {
     padding-top: $pd-7;
     overflow: hidden;
-    .container{
-        .nosotros__fila1{
-            .tittle__equipo{
+    .container {
+        .nosotros__fila1 {
+            .tittle__equipo {
                 @include texto($font-family3, map-get($tamaños-texto, size-tittle));
                 padding: $pd-2 $pd-0;
-
             }
         }
-        .nosotros__fila2{
-            img{
+        .nosotros__fila2 {
+            img {
                 width: 100%;
                 height: 90vh;
                 object-fit: contain;
                 filter: grayscale(1);
                 padding: $pd-0;
-                transition: map-get($transitions, 300 ) all ease;
-                &:hover{
+                transition: map-get($transitions, 300) all ease;
+                &:hover {
                     filter: grayscale(0);
                 }
-
             }
         }
-        .nosotros__fila3{
-            p{
+        .nosotros__fila3 {
+            p {
                 @include texto($font-family2, map-get($tamaños-texto, size-texto-p));
                 padding: 1rem 0;
                 text-align: justify;
@@ -162,53 +152,51 @@ main{
 }
 
 /* !Cards-individuales */
-.cards-individuales{
-    .container{
+.cards-individuales {
+    .container {
         padding: $pd-2 $pd-0;
-        .cards-individuales__fila1{
-            .card{
-                border: 3px solid map-get($colores , color3);
-                &:hover{
-                    box-shadow: 2px 2px 5px 2px map-get($colores , color-black );
+        .cards-individuales__fila1 {
+            .card {
+                border: 3px solid map-get($colores, color3);
+                &:hover {
+                    box-shadow: 2px 2px 5px 2px map-get($colores, color-black);
                     cursor: pointer;
                 }
-                .card-body{
-                    .nombre{
+                .card-body {
+                    .nombre {
                         @include texto($font-family3, map-get($tamaños-texto, size-subtittle));
                     }
-                    .presentacion{
+                    .presentacion {
                         font-family: $font-family2;
                         text-align: justify;
                     }
-                    i{
+                    i {
                         font-size: map-get($tamaños-texto, size-tittle);
                         position: absolute;
                         top: -1rem;
                         right: -1rem;
                     }
-                    .icono-augusto{
-                        color: map-get($colores , color5);
-                        &:hover{
+                    .icono-augusto {
+                        color: map-get($colores, color5);
+                        &:hover {
                             animation: zoom 1s ease;
                         }
                     }
-                    .icono-nayeli{
-                        color: map-get($colores , color1);
-                        &:hover{
+                    .icono-nayeli {
+                        color: map-get($colores, color1);
+                        &:hover {
                             animation: giro 1.6s ease alternate;
-    
                         }
                     }
-                    .icono-donato{
-                        color: map-get($colores , color2);
-                        &:hover{
+                    .icono-donato {
+                        color: map-get($colores, color2);
+                        &:hover {
                             animation: tembleque 0.7s ease;
-    
                         }
                     }
-                    .icono-frida{
-                        color: map-get($colores , color3);
-                        &:hover{
+                    .icono-frida {
+                        color: map-get($colores, color3);
+                        &:hover {
                             animation: opacidad 1s ease;
                         }
                     }
@@ -219,65 +207,61 @@ main{
 }
 
 /* Link */
-.links-page-move{
+.links-page-move {
     @include flex-justify-align(center);
     padding: 1rem 0;
-    a{
+    a {
         @include texto($font-family-links, map-get($tamaños-texto, size-links));
-        color: map-get($colores , color-link);
-        transition: map-get($transitions, 500 );
+        color: map-get($colores, color-link);
+        transition: map-get($transitions, 500);
         text-align: center;
-        &:hover{
-            color: map-get($colores , color-link-hover);
+        &:hover {
+            color: map-get($colores, color-link-hover);
         }
-
     }
-    
 }
 
 /* !FIN NOSOTROS */
 
-
 /* !START ACTIVIDADES */
 
-.modulos{
+.modulos {
     padding-top: $pd-7;
-    .modulos__contenedor{
-        h1{
+    .modulos__contenedor {
+        h1 {
             text-align: center;
             @include texto($font-family3, map-get($tamaños-texto, size-tittle));
-            padding:$pd-0 + 0.5;
+            padding: $pd-0 + 0.5;
         }
-        h2{
+        h2 {
             text-align: center;
             font-size: map-get($tamaños-texto, size-texto-p);
             margin: 0 10%;
             padding-bottom: $pd-2;
-
         }
-        .carousel{
-            .carousel-inner{
-                .carousel-item{
-                    img{
+        .carousel {
+            .carousel-inner {
+                .carousel-item {
+                    img {
                         display: block;
                         margin: 0 auto;
                         width: 85vw;
                         object-fit: cover;
                     }
-                    .carousel__text{
+                    .carousel__text {
                         background-color: rgba(0, 0, 0, 0.5);
                         margin: 0 15%;
                         border-radius: 1rem;
-                        h3{
-                            @include texto($font-family2, 2vw, $style:italic);
+                        h3 {
+                            @include texto($font-family2, 2vw, $style: italic);
                         }
-                        p{
+                        p {
                             @include texto($font-family2, 1.1vw);
                         }
-                        button{
+                        button {
                             text-decoration: none;
-                            @include texto($font-family2, 1.5vw,bold);
-                            background-color: map-get($colores , color3);
+                            @include texto($font-family2, 1.5vw, bold);
+                            background-color: map-get($colores, color3);
                             border: none;
                         }
                     }
@@ -285,22 +269,22 @@ main{
             }
         }
     }
-    .carousel-control-next , .carousel-control-prev{
-        span{
+    .carousel-control-next,
+    .carousel-control-prev {
+        span {
             background-color: rgba(252, 5, 5, 0.3);
             height: 100%;
-
         }
     }
 }
-.acord{
-    .accordion{
+.acord {
+    .accordion {
         max-width: 85%;
         margin: 2rem auto;
         border: 1px solid;
-        .accordion-item{
+        .accordion-item {
             background-color: whitesmoke;
-            h4{
+            h4 {
                 @include texto($font-family2, 1rem);
             }
         }
@@ -309,19 +293,17 @@ main{
 
 /* !FIN ACTIVIDADES  */
 
-
-
 /* !START PIZARRA */
 
 .pizarra {
     padding-top: $pd-7;
-    .tittle{
+    .tittle {
         text-align: center;
-        @include texto($font-family3,map-get($tamaños-texto, size-tittle));
+        @include texto($font-family3, map-get($tamaños-texto, size-tittle));
     }
-    .container-fluid{
-        @include background-big(url(../assets/images/texturacorcho8.jpg), $size:cover);
-        box-shadow: inset 0px 0px 20px 1px map-get($colores , color-black );
+    .container-fluid {
+        @include background-big(url(../assets/images/texturacorcho8.jpg), $size: cover);
+        box-shadow: inset 0px 0px 20px 1px map-get($colores, color-black);
         margin: 1rem auto 15rem auto;
         width: 95vw;
         height: 100vh;
@@ -331,73 +313,72 @@ main{
         border-image-slice: 60 30;
         position: relative;
         font-size: map-get($tamaños-texto, size-texto-p);
-        .posit{
+        .posit {
             height: 30vh;
             width: 15vw;
             margin-top: 4rem;
             border: 2px solid;
-
         }
-        .pizarra__fila1{
+        .pizarra__fila1 {
             @include flex-justify-align(space-around);
-            .calendar{
-                iframe{
+            .calendar {
+                iframe {
                     height: 50vh;
                     width: 30vw;
                     margin-top: 3rem;
                 }
             }
-            .posit_1{
+            .posit_1 {
                 background-color: #cfc;
                 transform: rotate(-5deg);
-                &::placeholder{
+                &::placeholder {
                     text-align: center;
-                    color: map-get($colores , color-black );
+                    color: map-get($colores, color-black);
                     @include texto($font-family-links, 1.5vw);
                 }
             }
-            .posit_2{
+            .posit_2 {
                 background-color: #fcf;
                 transform: rotate(5deg);
-                &::placeholder{
+                &::placeholder {
                     text-align: center;
-                    color: map-get($colores , color-black );
+                    color: map-get($colores, color-black);
                     @include texto($font-family-links, 1.5vw);
                 }
             }
         }
-        .pizarra__fila2{
+        .pizarra__fila2 {
             @include flex-justify-align(center, center);
-            .papel{
+            .papel {
                 @include flex-justify-align(center, flex-start);
-                .papel__links{
+                .papel__links {
                     @include background-big(url(../assets/images/papel.png), center, no-repeat, cover);
                     list-style: none;
                     padding: $pd-5;
-                    @include flex-big($direction:column, $wrap:wrap);
+                    @include flex-big($direction: column, $wrap: wrap);
                     position: relative;
                     bottom: 2rem;
-                    li{
+                    li {
                         font-size: 1.5vw;
-                        a{
-                            color: map-get($colores , color1);
+                        a {
+                            color: map-get($colores, color1);
                             text-decoration: none;
                             font-family: $font-family1;
-                            &:hover{
-                                color: map-get($colores , color3);
+                            &:hover {
+                                color: map-get($colores, color3);
                             }
                         }
                     }
                 }
             }
-            .posit__3{
+            .posit__3 {
                 background-color: #fcc;
                 position: relative;
                 bottom: 10rem;
                 right: 7rem;
-                &::placeholder{
+                &::placeholder {
                     text-align: center;
-                    color: map-get($colores , color-black );
+                    color: map-get($colores, color-black);
                     @include texto($font-family-links, 1.5vw);
                 }
             }
@@ -407,75 +388,69 @@ main{
 
 /* FIN PIZARRA */
 
-
-
 /* !START CONTACTO */
 .formularios {
-    h1{
-        color: map-get($colores , color-black );
+    h1 {
+        color: map-get($colores, color-black);
         @include texto($font-family3, map-get($tamaños-texto, size-tittle));
         flex-basis: 100%;
         text-align: center;
     }
-    @include flex-big(space-around, $wrap:wrap);
+    @include flex-big(space-around, $wrap: wrap);
     padding-top: $pd-7;
-    .container-contacto{
+    .container-contacto {
         padding: $pd-5 - 2;
         margin-top: 4rem;
-        background-color: map-get($colores , color3);
+        background-color: map-get($colores, color3);
         max-width: 45%;
         border-radius: 20px;
         padding-top: $pd-7;
-        h2{
+        h2 {
             @include texto($font-family-links, map-get($tamaños-texto, size-tittle) - 1);
             color: whitesmoke;
             text-shadow: 2px 2px 2px black;
             padding-bottom: 1rem;
-
         }
-        h3{
+        h3 {
             text-align: center;
             @include texto($font-family2, map-get($tamaños-texto, size-texto-p));
-            
         }
-        form{
-            .botones{
+        form {
+            .botones {
                 @include flex-justify-align(space-around, center);
                 margin-top: 2rem;
                 width: 50%;
                 margin: 2rem auto;
-
             }
         }
     }
 }
 /* !FIN CONTACTO */
 
-
 /* !404 ERROR */
 
-main{
-    .error{
-       
+main {
+    .error {
+        overflow: hidden;
         height: 100%;
-        .row{
-            .col-12{
+        .row {
+            .col-12 {
                 height: 100vh;
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
                 flex-direction: column;
                 margin-top: 7rem;
-                background-color: map-get($colores , color3);
-                h1{
+                background-color: map-get($colores, color3);
+                h1 {
                     text-align: center;
-                    @include texto($font-family-links, map-get($tamaños-texto, size-tittle)+2);
+                    @include texto($font-family-links, map-get($tamaños-texto, size-tittle) + 2);
                 }
-                h2{
+                h2 {
                     text-align: center;
-                    @include texto($font-family2, map-get($tamaños-texto, size-subtittle)+1);
+                    @include texto($font-family2, map-get($tamaños-texto, size-subtittle) + 1);
                 }
-                .animacionn{
+                .animacionn {
                     scale: 1.1;
                     overflow-x: hidden;
                 }
