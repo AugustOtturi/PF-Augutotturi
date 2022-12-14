@@ -126,9 +126,14 @@ main .hero {
       padding-bottom: 2rem; }
     main .hero .container-fluid .formulario div {
       padding: 0rem; }
-      main .hero .container-fluid .formulario div input, main .hero .container-fluid .formulario div button {
+      main .hero .container-fluid .formulario div input {
         border-radius: 0px;
         padding: 0.7rem; }
+      main .hero .container-fluid .formulario div button {
+        border-radius: 0px;
+        padding: 0.7rem;
+        background-color: #F35B04;
+        border: 1px solid #F35B04; }
     main .hero .container-fluid .a-info {
       height: 6rem;
       width: 6rem;
@@ -234,8 +239,7 @@ main .hero {
   .cards-individuales .container .cards-individuales__fila1 .card {
     border: 3px solid #F7B801; }
     .cards-individuales .container .cards-individuales__fila1 .card:hover {
-      box-shadow: 2px 2px 5px 2px #151313;
-      cursor: pointer; }
+      box-shadow: 2px 2px 5px 2px #151313; }
     .cards-individuales .container .cards-individuales__fila1 .card .card-body .nombre {
       font-family: "Reenie Beanie", cursive;
       font-size: 2.3rem;
@@ -326,7 +330,8 @@ main .hero {
       font-style: normal;
       background-color: #F7B801;
       border: none; }
-  .modulos .carousel-control-next span, .modulos .carousel-control-prev span {
+  .modulos .carousel-control-next span,
+  .modulos .carousel-control-prev span {
     background-color: rgba(252, 5, 5, 0.3);
     height: 100%; }
 
@@ -488,6 +493,10 @@ main .hero {
       margin-top: 2rem;
       width: 50%;
       margin: 2rem auto; }
+      .formularios .container-contacto form .botones .send {
+        background-color: #7678ED; }
+      .formularios .container-contacto form .botones .reset {
+        background-color: #F35B04; }
 
 /* !FIN CONTACTO */
 /* !404 ERROR */

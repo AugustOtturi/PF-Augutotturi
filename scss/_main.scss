@@ -27,10 +27,16 @@ main {
             .formulario {
                 div {
                     padding: $pd-0;
-                    input,
+                    input{
+                        border-radius: 0px;
+                        padding: $pd-0 + 0.7;
+                    }
                     button {
                         border-radius: 0px;
                         padding: $pd-0 + 0.7;
+                        background-color: map-get($colores, color5);
+                        border: 1px solid map-get($colores, color5 );
+    
                     }
                 }
             }
@@ -160,7 +166,6 @@ main {
                 border: 3px solid map-get($colores, color3);
                 &:hover {
                     box-shadow: 2px 2px 5px 2px map-get($colores, color-black);
-                    cursor: pointer;
                 }
                 .card-body {
                     .nombre {
@@ -421,6 +426,12 @@ main {
                 margin-top: 2rem;
                 width: 50%;
                 margin: 2rem auto;
+                .send{
+                    background-color: map-get($colores, color2 );
+                }
+                .reset{
+                    background-color:map-get($colores, color5 ); ;
+                }
             }
         }
     }
